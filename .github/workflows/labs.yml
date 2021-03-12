@@ -1,0 +1,24 @@
+name: Labs Repolinter
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        repo: [ 'HL-StarterKit', 'Scorex', 'TrustID', 'avalon-sdk-py', 'besu-operator', 'blockchain-automation-framework', 'blockchain-carbon-accounting', 'blockchain-verifier', 'business-partner-agent', 'byzantine-config', 'convector', 'cordentity', 'dancap', 'eThaler', 'fabex', 'fabric-block-archiving', 'fabric-chaincode-haskell', 'fabric-chaincode-wasm', 'fabric-opssc', 'fabric-private-chaincode-wasm', 'fabric-private-chaincode', 'go-perun', 'hyperledger-community-management-tools', 'hyperledger-fabric-based-access-control', 'hyperledger-labs.github.io', 'keyhole-fabric-api-gateway', 'minbft', 'minifabric', 'modern-pharmacy-management', 'perun-doc', 'perun-eth-contracts', 'perun-node', 'perun-proposals', 'pluggable-hcs', 'private-data-objects', 'private-transaction-families', 'pubsub-interop', 'solang', 'umbra', 'university-course', 'voters', 'weaver-dlt-interoperability', 'xcsi' ]
+
+    runs-on: ubuntu-latest
+    container: hyperledger-tools.jfrog.io/repolinter:0.10.0
+    steps:
+      - name: Lint Repo
+        continue-on-error: true
+        run: bundle exec /app/bin/repolinter.js --rulesetUrl https://raw.githubusercontent.com/hyperledger-labs/hyperledger-community-management-tools/master/repo_structure/repolint.json --format markdown -g https://github.com/hyperledger-labs/${{ matrix.repo }}.git | tee /${{ matrix.repo }}-repolinter-report.md
+      - name: Save repolinter-report file
+        uses: actions/upload-artifact@v2
+        with:
+          name: repolinter-report-labs
+          path: /${{ matrix.repo }}-repolinter-report.md
+
+

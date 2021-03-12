@@ -1,0 +1,23 @@
+name: Main Repolinter
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        repo: [ 'aries-acapy-controllers', 'aries-acapy-plugin-toolbox', 'aries-agent-test-harness', 'aries-askar', 'aries-cloudagent-python', 'aries-framework-dotnet', 'aries-framework-go-ext', 'aries-framework-go', 'aries-framework-javascript', 'aries-mobile-agent-react-native', 'aries-mobileagent-xamarin', 'aries-protocol-test-suite', 'aries-rfcs', 'aries-sdk-android', 'aries-sdk-java', 'aries-sdk-javascript', 'aries-sdk-ruby', 'aries-staticagent-python', 'aries-toolbox', 'aries-vcx', 'aries', 'avalon', 'besu-docs', 'besu-native', 'besu', 'blockchain-explorer', 'burrow', 'cactus', 'caliper-benchmarks', 'caliper', 'cello-analytics', 'cello', 'chat-assets', 'composer', 'education-sawtooth-simple-supply', 'fabric-amcl', 'fabric-baseimage', 'fabric-ca', 'fabric-chaincode-evm', 'fabric-chaincode-go', 'fabric-chaincode-java', 'fabric-chaincode-node', 'fabric-cli', 'fabric-config', 'fabric-contract-api-go', 'fabric-docs-i18n', 'fabric-gateway-java', 'fabric-gateway', 'fabric-lib-go', 'fabric-protos-go', 'fabric-protos', 'fabric-rfcs', 'fabric-samples', 'fabric-sdk-go', 'fabric-sdk-java', 'fabric-sdk-node', 'fabric-sdk-py', 'fabric-test', 'fabric-website', 'fabric', 'grid-contrib', 'grid-docs', 'grid-rfcs', 'grid', 'homebrew-besu', 'hyperledger-hip', 'hyperledger-rocket-chat-hubot', 'hyperledger', 'hyperledger.github.io', 'indy-did-method', 'indy-docs', 'indy-hipe', 'indy-node-monitor', 'indy-node', 'indy-plenum', 'indy-sdk', 'indy-shared-rs', 'indy-test-automation', 'indy-vdr', 'iroha-deploy', 'iroha-docs-l10n', 'iroha-ed25519', 'iroha-ios', 'iroha-java', 'iroha-javascript', 'iroha-python', 'iroha-state-migration-tool', 'iroha-tui-client', 'iroha', 'learning-materials-dev', 'perf-and-scale-wg', 'quilt', 'sawtooth-contrib', 'sawtooth-core', 'sawtooth-devmode', 'sawtooth-docs', 'sawtooth-explorer', 'sawtooth-lib', 'sawtooth-marketplace', 'sawtooth-pbft', 'sawtooth-poet', 'sawtooth-raft', 'sawtooth-rfcs', 'sawtooth-sabre', 'sawtooth-sdk-cxx', 'sawtooth-sdk-dotnet', 'sawtooth-sdk-go', 'sawtooth-sdk-java', 'sawtooth-sdk-javascript', 'sawtooth-sdk-python', 'sawtooth-sdk-rust', 'sawtooth-sdk-swift', 'sawtooth-seth', 'smart-contracts-wg', 'transact-contrib', 'transact-rfcs', 'transact-sdk-go', 'transact-sdk-javascript', 'transact', 'tsc', 'ursa-docs', 'ursa-python', 'ursa-rfcs', 'ursa-wrapper-go', 'ursa' ]
+
+    runs-on: ubuntu-latest
+    container: hyperledger-tools.jfrog.io/repolinter:0.10.0
+    steps:
+      - name: Lint Repo
+        continue-on-error: true
+        run: bundle exec /app/bin/repolinter.js --rulesetUrl https://raw.githubusercontent.com/hyperledger-labs/hyperledger-community-management-tools/master/repo_structure/repolint.json --format markdown -g https://github.com/hyperledger/${{ matrix.repo }}.git | tee /${{ matrix.repo }}-repolinter-report.md
+      - name: Save repolinter-report file
+        uses: actions/upload-artifact@v2
+        with:
+          name: repolinter-report-main
+          path: /${{ matrix.repo }}-repolinter-report.md
+
