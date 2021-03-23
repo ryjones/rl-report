@@ -5,11 +5,10 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 6 | 8 | 0 | 18 |
+| 0 | 3 | 6 | 9 | 0 | 18 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
 - [Warning](#user-content-warning)
@@ -21,6 +20,7 @@ This Repolinter run generated the following results:
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
+  - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
@@ -34,10 +34,6 @@ This Repolinter run generated the following results:
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
 Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
-
-### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
-
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 ### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
@@ -155,6 +151,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 ### ✅ `apache-license-file` <a href="#user-content--apache-license-file" id="-apache-license-file">#</a>
 
 Contains Apache License.*Version 2.0 (`LICENSE`).
+
+### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
+
+Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
 
 ### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 

@@ -816,8 +816,8 @@ Below is a list of files or patterns that failed:
 - `packages/composer-website/jekylldocs/assets/js/search_bar.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/app.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/karma.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/generator-hyperledger-composer/generators/angular/templates/protractor.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/proxy.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/generator-hyperledger-composer/generators/angular/templates/protractor.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-admin/test/data/businessnetwork/lib/animaltracking.cto.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-admin/test/data/businessnetwork/lib/animaltracking.cto.queries.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/lib/cmds/archive/lib/create.js`: The first 5 lines do not contain the pattern(s): Copyright.

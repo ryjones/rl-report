@@ -95,8 +95,8 @@ Below is a list of files or patterns that failed:
 - `docs/locale/es/source/_build/html/_static/underscore-1.3.1.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `docs/locale/es/source/_build/html/_static/underscore.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `docs/locale/pt_BR/source/_build/html/_static/doctools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/documentation_options.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `docs/locale/pt_BR/source/_build/html/_static/jquery-3.4.1.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/pt_BR/source/_build/html/_static/documentation_options.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `docs/locale/pt_BR/source/_build/html/_static/jquery.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `docs/locale/pt_BR/source/_build/html/_static/language_data.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `docs/locale/pt_BR/source/_build/html/_static/searchtools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.

@@ -5,11 +5,10 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 4 | 8 | 2 | 18 |
+| 0 | 3 | 4 | 9 | 2 | 18 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
@@ -19,6 +18,7 @@ This Repolinter run generated the following results:
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
+  - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
@@ -35,10 +35,6 @@ This Repolinter run generated the following results:
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
 Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
-
-### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
-
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 ### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
@@ -118,8 +114,8 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/services/node.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/organization.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/user.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `src/dashboard/src/utils/Authorized.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/authority.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/utils/Authorized.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/authority.test.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/getPageTitle.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/networks.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
@@ -233,6 +229,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 ### ✅ `apache-license-file` <a href="#user-content--apache-license-file" id="-apache-license-file">#</a>
 
 Contains Apache License.*Version 2.0 (`LICENSE`).
+
+### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
+
+Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
 
 ### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
