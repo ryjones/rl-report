@@ -34,7 +34,7 @@ This Repolinter run generated the following results:
 
 ### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect.Response (`SECURITY.md`).
+Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 

@@ -81,8 +81,8 @@ Below is a list of files or patterns that failed:
 - `src/renderer/message_bus.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/renderer/share.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/renderer/components/components.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `src/renderer/store/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/renderer/router/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `src/renderer/store/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/renderer/store/modules/Agents.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/renderer/store/modules/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 

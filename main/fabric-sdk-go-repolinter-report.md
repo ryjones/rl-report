@@ -38,7 +38,7 @@ Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-
 
 ### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect.Response (`SECURITY.md`).
+Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>

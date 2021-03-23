@@ -171,8 +171,8 @@ Below is a list of files or patterns that failed:
 - `packages/composer-common/scripts/tsgen.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/aclmanager.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/baseexception.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-common/test/businessnetworkdefinition.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/basefileexception.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-common/test/businessnetworkdefinition.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/businessnetworkmetadata.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/certificate.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/certificateutil.js`: The first 5 lines do not contain the pattern(s): Copyright.
@@ -663,8 +663,8 @@ Below is a list of files or patterns that failed:
 - `packages/composer-common/test/models/test.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/models/vehicle-lifecycle.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/models/wildcards.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-common/test/module/testmodule.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/module/module.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-common/test/module/testmodule.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/query/invalidqueryexception.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/query/limit.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/query/orderby.js`: The first 5 lines do not contain the pattern(s): Copyright.

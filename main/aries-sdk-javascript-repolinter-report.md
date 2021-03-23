@@ -38,7 +38,7 @@ Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
 
 ### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect.Response (`SECURITY.md`).
+Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 ### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
@@ -86,10 +86,10 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `src/IndyError.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/indyBinding.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/wrapIndyCallback.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `src/IndyError.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `test/anoncreds.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `test/blob.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `test/cache.js`: The first 5 lines do not contain the pattern(s): Copyright, License.

@@ -42,7 +42,7 @@ Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
 
 ### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
-Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect.Response (`SECURITY.md`).
+Doesn't contain https://wiki.hyperledger.org/display/SEC/Defect+Response (`SECURITY.md`).
 
 ### ❌ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
