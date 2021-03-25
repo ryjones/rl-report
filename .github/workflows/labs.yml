@@ -10,7 +10,7 @@ jobs:
         repo: [ 'HL-StarterKit', 'Scorex', 'TrustID', 'avalon-sdk-py', 'besu-operator', 'blockchain-automation-framework', 'blockchain-carbon-accounting', 'blockchain-verifier', 'business-partner-agent', 'byzantine-config', 'convector', 'cordentity', 'dancap', 'eThaler', 'fabex', 'fabric-block-archiving', 'fabric-chaincode-haskell', 'fabric-chaincode-wasm', 'fabric-opssc', 'fabric-private-chaincode-wasm', 'fabric-private-chaincode', 'go-perun', 'hyperledger-community-management-tools', 'hyperledger-fabric-based-access-control', 'hyperledger-labs.github.io', 'keyhole-fabric-api-gateway', 'minbft', 'minifabric', 'modern-pharmacy-management', 'perun-doc', 'perun-eth-contracts', 'perun-node', 'perun-proposals', 'pluggable-hcs', 'private-data-objects', 'private-transaction-families', 'pubsub-interop', 'solang', 'umbra', 'university-course', 'voters', 'weaver-dlt-interoperability', 'xcsi' ]
 
     runs-on: ubuntu-latest
-    container: hyperledger-tools.jfrog.io/repolinter:0.10.0
+    container: ghcr.io/todogroup/repolinter:v0.10.1
     steps:
       - name: Lint Repo
         continue-on-error: true
