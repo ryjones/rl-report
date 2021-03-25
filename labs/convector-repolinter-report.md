@@ -115,7 +115,7 @@ Found file (`package.json`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
-Licensee identified the license for project: Apache-2.0.
+Licensee identified the license for project: NOASSERTION.
 
 </details>
 

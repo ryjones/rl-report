@@ -114,8 +114,8 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/services/node.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/organization.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/user.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `src/dashboard/src/utils/authority.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/Authorized.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/utils/authority.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/authority.test.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/getPageTitle.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/utils/networks.js`: The first 5 lines do not contain the pattern(s): Copyright, License.

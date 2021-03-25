@@ -94,7 +94,7 @@ Found file (`.github/workflows/common.yml`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
-Found file (`component/storage/couchdb/testdata`).
+Found file (`test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

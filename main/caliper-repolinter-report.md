@@ -200,8 +200,8 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-core/lib/manager/test-observers/null-observer.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/manager/test-observers/observer-interface.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/manager/test-observers/test-observer.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-core/lib/worker/rate-control/fixedFeedbackRate.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/rate-control/compositeRate.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/rate-control/fixedFeedbackRate.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/rate-control/fixedLoad.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/rate-control/fixedRate.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/rate-control/linearRate.js`: The first 5 lines do not contain the pattern(s): Copyright.

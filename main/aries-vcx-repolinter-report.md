@@ -97,9 +97,9 @@ Below is a list of files or patterns that failed:
 - `agents/node/vcxagent-core/test/sign-verify.spec.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/test/trustping.spec.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/test/update-state-v2.spec.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `agents/node/vcxagent-core/src/services/service-connections.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/src/services/service-cred-holder.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/src/services/service-cred-issuer.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `agents/node/vcxagent-core/src/services/service-connections.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/src/services/service-ledger-creddef.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/src/services/service-ledger-schema.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
 - `agents/node/vcxagent-core/src/services/service-prover.js`: The first 5 lines do not contain the pattern(s): Copyright, License.

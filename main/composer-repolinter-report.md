@@ -188,11 +188,11 @@ Below is a list of files or patterns that failed:
 - `packages/composer-common/test/modelmanager.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/modelutil.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/module.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-common/test/querymanager.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/readonlydecorator.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/readonlydecoratorfactory.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/returnsdecorator.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/returnsdecoratorfactory.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-common/test/querymanager.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/scriptmanager.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/securitycontext.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/test/securityexception.js`: The first 5 lines do not contain the pattern(s): Copyright.
@@ -490,9 +490,6 @@ Below is a list of files or patterns that failed:
 - `packages/composer-cli/lib/cmds/participant.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/lib/cmds/report.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/lib/cmds/transaction.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-cli/test/archive/archive.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-cli/test/archive/create.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-cli/test/archive/list.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/card/card.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/card/create.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/card/delete.js`: The first 5 lines do not contain the pattern(s): Copyright.
@@ -500,6 +497,9 @@ Below is a list of files or patterns that failed:
 - `packages/composer-cli/test/card/import.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/card/list.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/card/validate.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-cli/test/archive/archive.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-cli/test/archive/create.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-cli/test/archive/list.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/generator/createCode.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/generator/generator.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/identity/bind.js`: The first 5 lines do not contain the pattern(s): Copyright.
@@ -519,9 +519,9 @@ Below is a list of files or patterns that failed:
 - `packages/composer-cli/test/network/upgrade.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/participant/add.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/participant/participant.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/composer-cli/test/report/report.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/transaction/submit.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/transaction/transaction.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/composer-cli/test/report/report.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/test/utils/cmdutils.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/lib/acl/aclfile.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-common/lib/acl/aclrule.js`: The first 5 lines do not contain the pattern(s): Copyright.
@@ -816,8 +816,8 @@ Below is a list of files or patterns that failed:
 - `packages/composer-website/jekylldocs/assets/js/search_bar.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/app.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/karma.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `packages/generator-hyperledger-composer/generators/angular/templates/proxy.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/generator-hyperledger-composer/generators/angular/templates/protractor.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `packages/generator-hyperledger-composer/generators/angular/templates/proxy.conf.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-admin/test/data/businessnetwork/lib/animaltracking.cto.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-admin/test/data/businessnetwork/lib/animaltracking.cto.queries.js`: The first 5 lines do not contain the pattern(s): Copyright.
 - `packages/composer-cli/lib/cmds/archive/lib/create.js`: The first 5 lines do not contain the pattern(s): Copyright.
