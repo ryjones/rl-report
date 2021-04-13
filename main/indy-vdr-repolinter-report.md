@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 4 | 8 | 2 | 18 |
+| 0 | 4 | 5 | 8 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -15,6 +15,7 @@ This Repolinter run generated the following results:
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
@@ -62,12 +63,33 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `wrappers/nodejs/demo/demo.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/demo/logger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/demo/demo.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/demo/logger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/crypto/edsigner.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/identifiers/did.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/identifiers/did_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/claim_def.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/claim_def_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/doc.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/model.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/reply.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/requests.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/schema.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/schema_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/signature.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/signature_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/sortedmap.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/sortedmap_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/vdr/writes.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/cmd/demo/demo.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`package.json`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -109,7 +131,7 @@ Found file (`docker/test-python.sh`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

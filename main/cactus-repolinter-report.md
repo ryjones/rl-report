@@ -5,13 +5,14 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 1 | 2 | 12 | 3 | 18 |
+| 0 | 1 | 3 | 12 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -50,20 +51,24 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `changelog.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `commitlint.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `karma.conf.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `webpack.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `webpack.dev.node.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `webpack.dev.web.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `webpack.prod.node.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `webpack.prod.web.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/generate-api-server-config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/generate-secp256k1-key-pair.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/get-package-info-list.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/validate-bundle-names.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `packages/cactus-cockpit/karma.conf.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `packages/cactus-cockpit/e2e/protractor.conf.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `changelog.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commitlint.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `karma.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `webpack.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `webpack.dev.node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `webpack.dev.web.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `webpack.prod.node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `webpack.prod.web.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/generate-api-server-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/generate-secp256k1-key-pair.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/get-package-info-list.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/validate-bundle-names.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cockpit/karma.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cockpit/e2e/protractor.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 </details>
 
@@ -106,11 +111,11 @@ Found file (`.github/workflows/ci.yml`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
-Found file (`examples/cactus-example-supply-chain-backend/src/test`).
+Found file (`examples/test-run-transaction`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 

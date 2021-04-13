@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 2 | 13 | 3 | 18 |
+| 0 | 0 | 2 | 13 | 4 | 19 |
 
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
@@ -28,6 +28,7 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -42,44 +43,44 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `ci/updatePackageJson.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `libraries/fabric-shim/bundle.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `libraries/fabric-shim/cli.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/toolchain/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `tools/toolchain/utils.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/clientidentity/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/crosschaincode/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/crud/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/encryption/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/events/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/ledger/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/query/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/scenario/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/scenario/scenariocontext.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `test/chaincodes/scenario/updatevalues.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `apis/fabric-contract-api/lib/annotations/default.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/lib/annotations/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/lib/annotations/info.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/lib/annotations/object.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/lib/annotations/utils.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/context.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/jsontransactionserializer.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/lib/cmds/startCommand.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/lib/utils/utils.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `libraries/fabric-shim/test/unit/cli.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/annotations/default.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/annotations/info.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/annotations/object.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/annotations/transaction.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `apis/fabric-contract-api/test/unit/annotations/utils.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/cmds/chaincode.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/contract-spi/bootstrap.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/contract-spi/chaincodefromcontract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/contract-spi/datamarshall.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/contract-spi/systemcontract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `libraries/fabric-shim/test/unit/utils/utils.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `ci/updatePackageJson.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `libraries/fabric-shim/bundle.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `libraries/fabric-shim/cli.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/toolchain/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/toolchain/utils.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/clientidentity/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/crosschaincode/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/crud/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/encryption/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/events/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/ledger/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/query/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/scenario/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/scenario/scenariocontext.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/chaincodes/scenario/updatevalues.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `apis/fabric-contract-api/lib/annotations/default.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/lib/annotations/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/lib/annotations/info.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/lib/annotations/object.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/lib/annotations/utils.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/context.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/jsontransactionserializer.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/lib/cmds/startCommand.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/lib/utils/utils.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `libraries/fabric-shim/test/unit/cli.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/annotations/default.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/annotations/info.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/annotations/object.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/annotations/transaction.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `apis/fabric-contract-api/test/unit/annotations/utils.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/cmds/chaincode.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/contract-spi/bootstrap.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/contract-spi/chaincodefromcontract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/contract-spi/datamarshall.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/contract-spi/systemcontract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `libraries/fabric-shim/test/unit/utils/utils.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -130,7 +131,7 @@ Found file (`test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -146,6 +147,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

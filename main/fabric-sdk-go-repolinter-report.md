@@ -5,12 +5,13 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 1 | 1 | 12 | 4 | 18 |
+| 0 | 1 | 2 | 12 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
+  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
@@ -20,9 +21,9 @@ This Repolinter run generated the following results:
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
-  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
+  - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -45,6 +46,13 @@ Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
+
+### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+Below is a list of files or patterns that failed:
+
+- `test/integration/pkg/client/channel/channel_client_javacc_test.go`: The first 7 lines do not contain the pattern(s): License.
+- `test/integration/pkg/client/channel/channel_client_nodecc_test.go`: The first 7 lines do not contain the pattern(s): License.
 
 </details>
 
@@ -85,17 +93,17 @@ Found file (`CHANGELOG.md`).
 
 Found file (`ci/azure-pipelines.yml`).
 
-### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-All files passed this test.
-
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
 Found file (`test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
+
+### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Found file (`go.mod`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

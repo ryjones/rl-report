@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 3 | 9 | 2 | 18 |
+| 0 | 4 | 3 | 9 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -27,6 +27,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
@@ -61,23 +62,14 @@ Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 Below is a list of files or patterns that failed:
 
-- `frontend/babel.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/jest.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/constants.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/main.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/model/model.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/plugins/vuetify.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/router/index.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/store/actions.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/store/getters.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/store/index.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/utils/partnerUtils.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/utils/sortUtils.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/components/tableHeaders/PartnerHeaders.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/components/tableHeaders/PresentationListHeaders.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/components/tableHeaders/WalletHeaders.js`: The first 5 lines do not contain the pattern(s): License.
-- `frontend/src/store/modules/socketevents.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `frontend/src/store/modules/taa.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `frontend/babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/jest.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/model/model.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/plugins/vuetify.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/store/actions.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/store/getters.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/store/modules/socketevents.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `frontend/src/store/modules/taa.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -124,11 +116,11 @@ Found file (`NOTICE`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
-Found file (`backend/business-partner-agent/src/test`).
+Found file (`backend/business-partner-agent-core/src/test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -140,6 +132,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 8 | 3 | 3 | 4 | 18 |
+| 0 | 8 | 4 | 3 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `apache-license-file`](#user-content--apache-license-file)
@@ -20,6 +20,7 @@ This Repolinter run generated the following results:
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -88,10 +89,10 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!node_modules/**`
+- `configfiles/k8s/chaincode/marbles02.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `Output-samples/k8s/k8s/chaincode/marbles02.go`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -100,6 +101,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `**/test*`
 - `**/specs`
 - `**/**_test.go`
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 </details>
 
@@ -114,7 +119,7 @@ Found file (`README.md`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

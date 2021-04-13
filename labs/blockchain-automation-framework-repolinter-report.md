@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 2 | 4 | 10 | 2 | 18 |
+| 0 | 2 | 4 | 10 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
@@ -27,6 +27,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
@@ -54,105 +55,118 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `examples/supplychain-app/besu/smartContracts/compile.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/besu/smartContracts/deploy.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/api.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/api.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/web3services.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/compile.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/deploy.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/truffle-config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/App.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/App.test.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/desktopStyles.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/mobileStyles.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/serviceWorker.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/setupProxy.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/controllers/container.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/controllers/general.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/controllers/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/corda/express_nodeJS/controllers/product.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/chaincode_rest_server/rest-server/bootstrap-server.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/controllers/container.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/controllers/general.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/controllers/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/fabric/express_nodeJs/controllers/product.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/ABI/productABI.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/controllers/container.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/controllers/general.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/controllers/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/express_nodeJS/controllers/product.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/migrations/1_initial_migration.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/migrations/2_general_contract.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/quorum/smartContracts/test/GeneralContract.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/util/getTimezone.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/util/numberPadding.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/util/parseName.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/brunch-config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/brunch-config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/ContainerDetails.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/Dashboard.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/ProductMap.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/QrGen.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/ContainerDetails.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/CreateContainer.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/DashboardQrScan.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/LocationDetails.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/PackageGood.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/ProductDetails.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/QrReader.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `examples/supplychain-app/supplychain-frontend/src/util/api/supplyChainRequests.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/initialize.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/vendor/pug_runtime.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/initialize.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/vendor/pug_runtime.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/scripts/geoCode.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/scripts/headersList.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/scripts/jwtProcess.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/scripts/processData.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/scripts/restCalls.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/scripts/geoCode.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/scripts/headersList.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/scripts/jwtProcess.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/scripts/processData.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/scripts/restCalls.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/DisplayBraid/DisplayBraid.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Map/MyMap.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Metrics/Metrics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Modal/Modal.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Nav/Nav.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Sidebar/Sidebar.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Spinner/Spinner.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/components/Table/Table.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/App/App.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Default/Default.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Login/Login.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Page/Page.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/DisplayBraid/DisplayBraid.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Map/MyMap.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Metrics/Metrics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Modal/Modal.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Nav/Nav.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Sidebar/Sidebar.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Spinner/Spinner.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/components/Table/Table.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/App/App.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Default/Default.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Login/Login.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Page/Page.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Braid/Braid.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Home/Home.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Swagger/Swagger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Braid/Braid.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Home/Home.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Swagger/Swagger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/besu/smartContracts/compile.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/besu/smartContracts/deploy.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/api.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/api.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/web3services.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/compile.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/deploy.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/truffle-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/App.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/App.test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/desktopStyles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/mobileStyles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/serviceWorker.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/setupProxy.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/controllers/container.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/controllers/general.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/controllers/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/corda/express_nodeJS/controllers/product.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/rest-server/bootstrap-server.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/controllers/container.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/controllers/general.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/controllers/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/express_nodeJs/controllers/product.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/ABI/productABI.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/controllers/container.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/controllers/general.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/controllers/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/express_nodeJS/controllers/product.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/migrations/1_initial_migration.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/migrations/2_general_contract.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/quorum/smartContracts/test/GeneralContract.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/util/getTimezone.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/util/numberPadding.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/util/parseName.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/brunch-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/brunch-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/ContainerDetails.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/Dashboard.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/ProductMap.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/desktop/QrGen.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/ContainerDetails.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/CreateContainer.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/DashboardQrScan.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/LocationDetails.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/PackageGood.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/ProductDetails.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/containers/mobile/QrReader.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/supplychain-frontend/src/util/api/supplyChainRequests.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/initialize.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/initialize.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/scripts/geoCode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/scripts/headersList.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/scripts/jwtProcess.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/scripts/processData.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/scripts/restCalls.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/scripts/geoCode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/scripts/headersList.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/scripts/jwtProcess.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/scripts/processData.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/scripts/restCalls.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/DisplayBraid/DisplayBraid.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Map/MyMap.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Metrics/Metrics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Modal/Modal.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Nav/Nav.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Sidebar/Sidebar.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Spinner/Spinner.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/components/Table/Table.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/App/App.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Default/Default.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Login/Login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Page/Page.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/DisplayBraid/DisplayBraid.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Map/MyMap.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Metrics/Metrics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Modal/Modal.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Nav/Nav.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Sidebar/Sidebar.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Spinner/Spinner.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/components/Table/Table.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/App/App.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Default/Default.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Login/Login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Page/Page.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Braid/Braid.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Home/Home.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/doorman/website/app/containers/Pages/Swagger/Swagger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Braid/Braid.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Home/Home.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `platforms/r3-corda/images/networkmap/website/app/containers/Pages/Swagger/Swagger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/Container.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/ContainerRequest.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/History.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/Identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/Product.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/ProductRequest.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/common/UpdateRequest.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Common.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Common_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Container.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Container_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Product.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/Product_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/SupplyChain.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/supplychain-app/fabric/chaincode_rest_server/chaincode/supplychain/cmd/main.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -206,7 +220,7 @@ Found file (`examples/identity-app/tests`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -218,6 +232,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

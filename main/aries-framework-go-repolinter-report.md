@@ -5,10 +5,11 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 2 | 13 | 3 | 18 |
+| 0 | 0 | 3 | 13 | 3 | 19 |
 
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
+  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -20,9 +21,9 @@ This Repolinter run generated the following results:
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
-  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
+  - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -37,6 +38,21 @@ This Repolinter run generated the following results:
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
+
+### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+Below is a list of files or patterns that failed:
+
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/bls12_381.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/field_element.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/field_element_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/fp.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/fp_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/g1.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/hash_to_field_custom.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/isogeny.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/swu.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -85,17 +101,17 @@ Found file (`CHANGELOG.md`).
 
 Found file (`.github/workflows/bbs-interop.yml`).
 
-### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-All files passed this test.
-
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
 Found file (`test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
+
+### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Found file (`go.mod`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

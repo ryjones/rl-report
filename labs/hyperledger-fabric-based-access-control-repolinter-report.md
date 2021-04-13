@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 3 | 5 | 3 | 18 |
+| 0 | 7 | 3 | 5 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -26,6 +26,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -86,28 +87,28 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `chaincode/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `attributebased/javascript/enrollAdmin.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `attributebased/javascript/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `attributebased/javascript/invoke.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `attributebased/javascript/query.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `attributebased/javascript/registerUser.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/ledger-api/state.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/ledger-api/statelist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/Policy.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/PolicyList.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/Resource.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/ResourceList.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/Subject.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/SubjectList.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `chaincode/lib/attributebased.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/addpolicy.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/addresource.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/addsubject.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/init.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/pdp.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/benchmark/query.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `test/src/contract/fabric/attributeBased/node/attributebased.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `attributebased/javascript/enrollAdmin.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `attributebased/javascript/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `attributebased/javascript/invoke.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `attributebased/javascript/query.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `attributebased/javascript/registerUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/ledger-api/state.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/ledger-api/statelist.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/Policy.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/PolicyList.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/Resource.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/ResourceList.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/Subject.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/SubjectList.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/lib/attributebased.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/addpolicy.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/addresource.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/addsubject.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/init.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/pdp.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/benchmark/query.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/src/contract/fabric/attributeBased/node/attributebased.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -134,7 +135,7 @@ Found file (`test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -146,6 +147,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

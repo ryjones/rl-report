@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 3 | 5 | 3 | 18 |
+| 0 | 7 | 3 | 5 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `apache-license-file`](#user-content--apache-license-file)
@@ -26,6 +26,7 @@ This Repolinter run generated the following results:
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -80,19 +81,18 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `gulpfile.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `src/markdown-it-extensions.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/compiled/body.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `assets/compiled/head.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/js/chart.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `assets/js/custom-elements.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/js/font-awesome.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `assets/js/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/js/popper.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `assets/js/prism.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/js/tippy.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `assets/js/utils.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `gulpfile.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/markdown-it-extensions.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/compiled/head.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/js/chart.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `assets/js/custom-elements.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/js/font-awesome.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `assets/js/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/js/popper.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `assets/js/prism.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/js/tippy.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `assets/js/utils.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -122,7 +122,7 @@ Found file (`.github/workflows/render-specs.yml`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -138,6 +138,10 @@ Licensee identified the license for project: CC-BY-4.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

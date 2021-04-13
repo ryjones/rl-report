@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 4 | 6 | 3 | 18 |
+| 0 | 5 | 4 | 7 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `apache-license-file`](#user-content--apache-license-file)
@@ -25,6 +25,7 @@ This Repolinter run generated the following results:
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
+  - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -64,10 +65,10 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!node_modules/**`
+- `gen.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `mocks/mock_messaging/connection.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -109,7 +110,11 @@ Found file (`tests`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
+
+### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Found file (`go.mod`).
 
 </details>
 

@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 3 | 5 | 3 | 18 |
+| 0 | 7 | 5 | 5 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -19,6 +19,8 @@ This Repolinter run generated the following results:
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
@@ -26,7 +28,6 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
@@ -86,72 +87,75 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `net-emissions-token-network/hardhat.config.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/scripts/deploy-all-with-limited-mode.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/scripts/deploy-all.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/scripts/deploy-dao.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/scripts/deploy-net-emissions-token-network.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/test/DAO-integration-tests.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/test/DAO-unit-tests.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/test/common.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/test/ethers-provider.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `net-emissions-token-network/test/token-network-integration-tests.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/test/token-network-unit-tests.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/docker-compose-setup/abrevToName.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/docker-compose-setup/egrid-data-loader.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/emissions_calc_test/test.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/typescript_app/handler.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/typescript_app/webpack.config.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/typescript_app/invokeChaincodeManually/createWallet.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/typescript_app/invokeChaincodeManually/invoke.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/typescript_app/tests/test.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/ledger-api/state.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/ledger-api/statelist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/constants.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/egrid-data.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/emissions-calc.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/emissions.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/emissionscontract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node/lib/emissionslist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/ledger-api/state.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/ledger-api/statelist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/constants.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/egrid-data.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/emissions-calc.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/emissions.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/emissionscontract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `utility-emissions-channel/chaincode/node_ext/lib/emissionslist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/contracts/src/abis.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/contracts/src/addresses.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/contracts/src/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/scripts/ipfs.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/App.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/App.test.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/setupTests.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/access-control-form.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/create-proposal-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/dashboard.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/delegate-dao-tokens-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/governance-dashboard.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/issue-form.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/navigation-bar.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/proposal-call-details-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/queue-execute-proposal-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/retire-form.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/submission-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/token-info-modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/components/transfer-form.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/graphql/subgraph.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/hooks/useWeb3Modal.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/services/contract-functions.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `net-emissions-token-network/interface/packages/react-app/src/services/fabric-api.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/hardhat.config.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/deploy/dao.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/deploy/net-emissions-token-network.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/test/DAO-integration-tests.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/test/DAO-unit-tests.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/test/common.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/test/ethers-provider.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `net-emissions-token-network/test/token-network-integration-tests.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/test/token-network-unit-tests.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/docker-compose-setup/abrevToName.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/docker-compose-setup/egrid-data-loader.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/emissions_calc_test/test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/typescript_app/handler.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/typescript_app/webpack.config.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/typescript_app/invokeChaincodeManually/createWallet.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/typescript_app/invokeChaincodeManually/invoke.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/typescript_app/tests/test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/ledger-api/state.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/ledger-api/statelist.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/constants.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/egrid-data.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/emissions-calc.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/emissions.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/emissionscontract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/node/lib/emissionslist.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/contracts/src/abis.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/contracts/src/addresses.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/contracts/src/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/scripts/ipfs.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/App.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/App.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/setupTests.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/access-control-form.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/create-proposal-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/dashboard.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/delegate-dao-tokens-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/governance-dashboard.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/issue-form.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/navigation-bar.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/proposal-call-details-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/queue-execute-proposal-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/retire-form.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/submission-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/token-info-modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/components/transfer-form.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/graphql/subgraph.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/hooks/useWeb3Modal.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/services/contract-functions.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `net-emissions-token-network/interface/packages/react-app/src/services/fabric-api.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `multi-cloud-deployment/chaincode/marbles02.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `multi-cloud-deployment/deploy-aws/chaincode/marbles02.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `utility-emissions-channel/chaincode/go/emissioncc.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`package.json`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
+
+- `setup.py`
+- `requirements.txt`
 
 </details>
 
@@ -174,7 +178,7 @@ Found file (`net-emissions-token-network/test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -194,10 +198,6 @@ This rule was ignored for the following reason: ignored due to unsatisfied condi
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=java"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=python"
 
 </details>
 

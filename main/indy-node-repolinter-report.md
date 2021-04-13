@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 2 | 9 | 3 | 18 |
+| 0 | 4 | 2 | 9 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -26,6 +26,7 @@ This Repolinter run generated the following results:
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -63,7 +64,11 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!node_modules/**`
+- `!**/node_modules/**`
+- `**/*.go`
+- `!**/vendor/**`
+- `!**/*.pb.go`
+- `!**/*.gen.go`
 
 </details>
 
@@ -118,6 +123,10 @@ Found file (`setup.py`).
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

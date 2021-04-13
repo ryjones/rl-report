@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 2 | 5 | 4 | 18 |
+| 0 | 7 | 2 | 5 | 5 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `apache-license-file`](#user-content--apache-license-file)
@@ -25,6 +25,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -86,26 +87,26 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `docs/locale/es/source/_build/html/_static/doctools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/documentation_options.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/jquery-3.4.1.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/jquery.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/es/source/_build/html/_static/language_data.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/searchtools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/underscore-1.3.1.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/es/source/_build/html/_static/underscore.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/pt_BR/source/_build/html/_static/doctools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/documentation_options.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/jquery-3.4.1.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/jquery.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/pt_BR/source/_build/html/_static/language_data.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/searchtools.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/underscore-1.3.1.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/pt_BR/source/_build/html/_static/underscore.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/es/source/_build/html/_static/js/modernizr.min.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/es/source/_build/html/_static/js/theme.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `docs/locale/pt_BR/source/_build/html/_static/js/modernizr.min.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/locale/pt_BR/source/_build/html/_static/js/theme.js`: The first 5 lines do not contain the pattern(s): Copyright.
+- `docs/locale/es/source/_build/html/_static/doctools.js`: The first 7 lines do not contain the pattern(s): License.
+- `docs/locale/es/source/_build/html/_static/documentation_options.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/es/source/_build/html/_static/jquery-3.4.1.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/es/source/_build/html/_static/jquery.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/es/source/_build/html/_static/language_data.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/es/source/_build/html/_static/searchtools.js`: The first 7 lines do not contain the pattern(s): License.
+- `docs/locale/es/source/_build/html/_static/underscore-1.3.1.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/es/source/_build/html/_static/underscore.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/pt_BR/source/_build/html/_static/doctools.js`: The first 7 lines do not contain the pattern(s): License.
+- `docs/locale/pt_BR/source/_build/html/_static/documentation_options.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/pt_BR/source/_build/html/_static/jquery-3.4.1.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/pt_BR/source/_build/html/_static/jquery.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/pt_BR/source/_build/html/_static/language_data.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/pt_BR/source/_build/html/_static/searchtools.js`: The first 7 lines do not contain the pattern(s): License.
+- `docs/locale/pt_BR/source/_build/html/_static/underscore-1.3.1.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/pt_BR/source/_build/html/_static/underscore.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/es/source/_build/html/_static/js/modernizr.min.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/es/source/_build/html/_static/js/theme.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `docs/locale/pt_BR/source/_build/html/_static/js/modernizr.min.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/locale/pt_BR/source/_build/html/_static/js/theme.js`: The first 7 lines do not contain the pattern(s): Copyright.
 
 </details>
 
@@ -128,7 +129,7 @@ Found file (`docs/locale/ar/source/test_network.md`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -144,6 +145,10 @@ Licensee identified the license for project: CC-BY-4.0.
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

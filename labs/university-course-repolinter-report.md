@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 4 | 7 | 2 | 18 |
+| 0 | 5 | 4 | 7 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -27,6 +27,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
@@ -78,65 +79,65 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `support/Lab02/key.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab02/rsa.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab05/chaincode/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/index.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/ledger-api/state.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/ledger-api/statelist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/logistics-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/quc-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/user-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/test/contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/ledger-api/state.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/ledger-api/statelist.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/logistics-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/quc-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/user-contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/test/contract.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/logistics/course-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/logistics/course.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/logistics/university-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/logistics/university.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/quc/feedback-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/quc/feedback.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/quc/quc-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/quc/quc.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/users/professor-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/users/professor.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/users/student-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab05/chaincode/lib/users/student.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/logistics/course-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/logistics/course.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/logistics/university-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/logistics/university.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/quc/feedback-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/quc/feedback.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/quc/quc-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/quc/quc.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/users/professor-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/users/professor.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/users/student-list.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/chaincode/lib/users/student.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/students-union/b4s_client/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/students-union/b4s_client/gateway.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/students-union/utils/addToWallet.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/students-union/utils/renamePK.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/students-union/utils/showIdentity.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/university/b4s_client/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/b4s_client/gateway.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/user-interface/babel.config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/utils/addToWallet.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/university/utils/createUniversity.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/university/utils/renamePK.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/utils/showIdentity.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `support/Lab06/b4s/organization/students-union/b4s_client/routes/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/students-union/b4s_client/routes/logistics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/b4s_client/routes/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/b4s_client/routes/logistics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/b4s_client/routes/users.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/user-interface/src/main.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/user-interface/src/router.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/key.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/rsa.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab05/chaincode/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/ledger-api/state.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/ledger-api/statelist.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/logistics-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/quc-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/user-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/test/contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/ledger-api/state.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/ledger-api/statelist.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/logistics-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/quc-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/user-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/test/contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/logistics/course-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/logistics/course.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/logistics/university-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/logistics/university.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/quc/feedback-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/quc/feedback.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/quc/quc-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/quc/quc.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/users/professor-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/users/professor.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/users/student-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab05/chaincode/lib/users/student.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/logistics/course-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/logistics/course.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/logistics/university-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/logistics/university.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/quc/feedback-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/quc/feedback.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/quc/quc-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/quc/quc.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/users/professor-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/users/professor.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/users/student-list.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/chaincode/lib/users/student.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/students-union/b4s_client/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/students-union/b4s_client/gateway.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/students-union/utils/addToWallet.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/students-union/utils/renamePK.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/students-union/utils/showIdentity.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/university/b4s_client/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/b4s_client/gateway.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/user-interface/babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/utils/addToWallet.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/university/utils/createUniversity.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/university/utils/renamePK.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/utils/showIdentity.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/students-union/b4s_client/routes/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/students-union/b4s_client/routes/logistics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/b4s_client/routes/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/b4s_client/routes/logistics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/b4s_client/routes/users.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/user-interface/src/main.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab06/b4s/organization/university/user-interface/src/router.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -178,7 +179,7 @@ Found file (`support/Lab02/test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -190,6 +191,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

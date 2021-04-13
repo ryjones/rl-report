@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 6 | 4 | 6 | 2 | 18 |
+| 0 | 6 | 5 | 6 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -17,6 +17,7 @@ This Repolinter run generated the following results:
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
@@ -82,19 +83,36 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `integration/cucumber.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `common/src/lib/Packager.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/Policy.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/packager/BasePackager.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/packager/Golang.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/packager/Java.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/packager/Lifecycle.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `common/src/lib/packager/Node.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-javascript/test/assetTransfer.test.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `integration/cucumber.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `common/src/lib/Packager.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/Policy.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/packager/BasePackager.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/packager/Golang.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/packager/Java.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/packager/Lifecycle.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `common/src/lib/packager/Node.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-javascript/test/assetTransfer.test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/chaincode_ops/core/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/chaincode_ops/core/mocks/statequeryiterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/chaincode_ops/core/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/channel_ops/chaincode/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/channel_ops/chaincode/mocks/statequeryiterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/channel_ops/chaincode/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-external/assetTransfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/assetTransfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/chaincode/smartcontract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/chaincode/smartcontract_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/chaincode/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/chaincode/mocks/statequeryiterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sample-environments/fabric-samples/asset-transfer-basic/chaincode-go/chaincode/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`package.json`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -129,7 +147,7 @@ Found file (`configtx-cli/ops/testdata`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

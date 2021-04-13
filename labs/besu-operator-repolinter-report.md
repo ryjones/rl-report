@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 3 | 4 | 4 | 18 |
+| 0 | 7 | 3 | 5 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -23,6 +23,7 @@ This Repolinter run generated the following results:
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
+  - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -84,10 +85,38 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!node_modules/**`
+- `version/version.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `cmd/manager/main.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/addtoscheme_hyperledger_v1alpha1.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/apis.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/add_besu.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/add_besunode.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/add_grafana.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/add_prometheus.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/controller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/resources/common.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/group.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besu/besu_controller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besu/besu_ensure.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besu/besu_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besunode/besunode_controller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besunode/besunode_ensure.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/besunode/besunode_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/grafana/grafana_controller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/grafana/grafana_ensure.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/grafana/grafana_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/prometheus/prometheus_controller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/prometheus/prometheus_ensure.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/controller/prometheus/prometheus_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/besu_types.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/besunode_types.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/doc.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/grafana_types.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/prometheus_types.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/register.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `pkg/apis/hyperledger/v1alpha1/zz_generated.deepcopy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -114,7 +143,11 @@ Found file (`README.md`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
+
+### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Found file (`go.mod`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

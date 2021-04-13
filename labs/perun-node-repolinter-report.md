@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 1 | 9 | 4 | 18 |
+| 0 | 4 | 1 | 10 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -23,6 +23,7 @@ This Repolinter run generated the following results:
   - [✅ `notice-file-exists`](#user-content--notice-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
+  - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -59,10 +60,21 @@ Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!node_modules/**`
+- `internal/mocks/ChAPI.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/ChClient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/ChProposalResponder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/ChUpdateResponder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/Channel.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/ChannelProposal.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/Closer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/CommBackend.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/Dialer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/Listener.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/Registerer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/SessionAPI.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `internal/mocks/WireBus.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -101,7 +113,11 @@ Found file (`testdata`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
+
+### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Found file (`go.mod`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

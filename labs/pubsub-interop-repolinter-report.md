@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 4 | 5 | 2 | 18 |
+| 0 | 7 | 4 | 5 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -27,6 +27,7 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
@@ -86,41 +87,41 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `blockchain-client/javascript/app.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `blockchain-client/javascript/enrollAdmin.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `blockchain-client/javascript/invoke.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `blockchain-client/javascript/query.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `blockchain-client/javascript/registerUser.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `blockchain-client/javascript/walletInteract.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `chaincode/broker/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `chaincode/pubsub/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/Fabric1.4/config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `blockchain-client/javascript/client/client.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `chaincode/broker/lib/broker.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `chaincode/pubsub/lib/pubsub.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/Fabric1.4/client/client.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/client/client.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/pubsub-connector/truffle-config.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/broker/createTopic.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/broker/publishToTopic.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/broker/queryAllTopics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/broker/queryTopic.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/broker/subscribeToTopic.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/pubsub/createBlockchain.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/pubsub/queryAllBlockchains.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `caliper-tests/benchmarks/callbacks/pubsub/queryBlockchain.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-publisher/Fabric2/blockchain-client/javascript/enrollAdmin.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `example-publisher/Fabric2/blockchain-client/javascript/invoke.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `example-publisher/Fabric2/blockchain-client/javascript/query.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `example-publisher/Fabric2/blockchain-client/javascript/registerUser.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `example-subscriber/besu/config/ethsigner/createKey.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/pubsub-connector/migrations/1_initial_migration.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/pubsub-connector/migrations/2_deploy_contracts.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-publisher/Fabric2/blockchain-client/javascript/client/client.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-publisher/Fabric2/chaincode/topics/lib/topics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/Fabric1.4/artifacts/src/topics/topics.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/block-explorer-light/dist/js/app.769a0f91.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `example-subscriber/besu/block-explorer-light/dist/js/chunk-vendors.79a7999a.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `blockchain-client/javascript/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `blockchain-client/javascript/enrollAdmin.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `blockchain-client/javascript/invoke.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `blockchain-client/javascript/query.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `blockchain-client/javascript/registerUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `blockchain-client/javascript/walletInteract.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/broker/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/pubsub/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/Fabric1.4/config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `blockchain-client/javascript/client/client.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/broker/lib/broker.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/pubsub/lib/pubsub.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/Fabric1.4/client/client.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/client/client.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/pubsub-connector/truffle-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/broker/createTopic.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/broker/publishToTopic.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/broker/queryAllTopics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/broker/queryTopic.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/broker/subscribeToTopic.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/pubsub/createBlockchain.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/pubsub/queryAllBlockchains.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `caliper-tests/benchmarks/callbacks/pubsub/queryBlockchain.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-publisher/Fabric2/blockchain-client/javascript/enrollAdmin.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `example-publisher/Fabric2/blockchain-client/javascript/invoke.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `example-publisher/Fabric2/blockchain-client/javascript/query.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `example-publisher/Fabric2/blockchain-client/javascript/registerUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `example-subscriber/besu/config/ethsigner/createKey.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/pubsub-connector/migrations/1_initial_migration.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/pubsub-connector/migrations/2_deploy_contracts.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-publisher/Fabric2/blockchain-client/javascript/client/client.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-publisher/Fabric2/chaincode/topics/lib/topics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/Fabric1.4/artifacts/src/topics/topics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/block-explorer-light/dist/js/app.769a0f91.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example-subscriber/besu/block-explorer-light/dist/js/chunk-vendors.79a7999a.js`: The first 7 lines do not contain the pattern(s): License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -154,7 +155,7 @@ Found file (`test-network`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -166,6 +167,10 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

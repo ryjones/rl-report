@@ -5,10 +5,12 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 2 | 13 | 3 | 18 |
+| 0 | 0 | 4 | 12 | 3 | 19 |
 
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
+  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -20,7 +22,6 @@ This Repolinter run generated the following results:
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
-  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
@@ -38,9 +39,22 @@ This Repolinter run generated the following results:
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
 
+### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+Below is a list of files or patterns that failed:
+
+- `evmcc/mocks/mockstub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fab3/mocks/mockchannelclient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fab3/mocks/mockethservice.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fab3/mocks/mockledgerclient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`package.json`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 </details>
 
@@ -85,17 +99,13 @@ Found file (`CHANGELOG.md`).
 
 Found file (`ci/azure-pipelines.yml`).
 
-### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-All files passed this test.
-
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
 Found file (`evmcc/vendor/github.com/pelletier/go-toml/test.sh`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 

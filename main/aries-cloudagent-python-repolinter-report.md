@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 1 | 14 | 3 | 18 |
+| 0 | 0 | 1 | 14 | 4 | 19 |
 
 - [Warning](#user-content-warning)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
@@ -28,6 +28,7 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -39,7 +40,11 @@ This Repolinter run generated the following results:
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!node_modules/**`
+- `!**/node_modules/**`
+- `**/*.go`
+- `!**/vendor/**`
+- `!**/*.pb.go`
+- `!**/*.gen.go`
 
 </details>
 
@@ -94,7 +99,7 @@ Found file (`aries_cloudagent/tests`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
@@ -114,6 +119,10 @@ Found file (`setup.py`).
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

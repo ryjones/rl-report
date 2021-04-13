@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 3 | 6 | 9 | 0 | 18 |
+| 0 | 3 | 6 | 9 | 1 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -28,6 +28,8 @@ This Repolinter run generated the following results:
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
+- [Ignored](#user-content-ignored)
+  - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
 ## Fail <a href="#user-content-fail" id="fail">#</a>
 
@@ -57,66 +59,66 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `samples/nodejs/src/anoncredsRevocation.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `samples/nodejs/src/anoncredsRevocationScenario.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `samples/nodejs/src/colors.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `samples/nodejs/src/gettingStarted.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `samples/nodejs/src/main.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `samples/nodejs/src/util.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/notification-server.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/src/IndyError.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/src/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/src/indyBinding.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/src/wrapIndyCallback.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/anoncreds.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/blob.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/cache.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/crypto.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/did.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/index.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/ledger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/logger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/logger2.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/mod.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/nonsecrets.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/pairwise.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/payments.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/pool.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/wallet.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/colors.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/negotiateProof.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/step2.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/step3.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/step4.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/step5.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/template.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/negotiate-proof/nodejs/util.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/colors.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/rotateKey.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/step2.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/step3.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/step4.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/template.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/rotate-key/nodejs/util.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/colors.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/step2.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/step3.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/step4.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/step5.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/template.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/util.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `docs/how-tos/write-did-and-query-verkey/nodejs/writeDidAndQueryVerkey.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/alice-signature.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/alice.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/common.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/faber-verify-signature.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/faber.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/logger.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `vcx/wrappers/node/demo/script-comon.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/dotnet/docs/styles/docfx.vendor.js`: The first 5 lines do not contain the pattern(s): Copyright.
-- `wrappers/dotnet/docs/styles/search-worker.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/helpers/initTestPool.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
-- `wrappers/nodejs/test/helpers/makeTestPool.js`: The first 5 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/anoncredsRevocation.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/anoncredsRevocationScenario.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/colors.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/gettingStarted.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/main.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/nodejs/src/util.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/notification-server.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/src/IndyError.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/src/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/src/indyBinding.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/src/wrapIndyCallback.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/anoncreds.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/blob.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/cache.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/crypto.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/did.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/ledger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/logger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/logger2.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/mod.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/nonsecrets.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/pairwise.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/payments.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/pool.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/wallet.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/colors.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/negotiateProof.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/step2.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/step3.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/step4.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/step5.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/template.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/negotiate-proof/nodejs/util.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/colors.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/rotateKey.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/step2.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/step3.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/step4.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/template.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/rotate-key/nodejs/util.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/colors.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/step2.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/step3.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/step4.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/step5.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/template.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/util.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `docs/how-tos/write-did-and-query-verkey/nodejs/writeDidAndQueryVerkey.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/alice-signature.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/alice.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/common.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/faber-verify-signature.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/faber.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/logger.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vcx/wrappers/node/demo/script-comon.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/dotnet/docs/styles/docfx.vendor.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `wrappers/dotnet/docs/styles/search-worker.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/helpers/initTestPool.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/nodejs/test/helpers/makeTestPool.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -178,11 +180,22 @@ Found file (`libindy/tests`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
-Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!node_modules/**`).
+Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 
 ### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
 
 Licensee identified the license for project: Apache-2.0.
+
+</details>
+
+## Ignored <a href="#user-content-ignored" id="ignored">#</a>
+
+<details>
+<summary>Click to see rules</summary>
+
+### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
+
+This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 </details>
 
