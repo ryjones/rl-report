@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repo: [ 'HL-StarterKit', 'Scorex', 'TrustID', 'avalon-sdk-py', 'besu-operator', 'blockchain-automation-framework', 'blockchain-carbon-accounting', 'blockchain-verifier', 'business-partner-agent', 'byzantine-config', 'convector', 'cordentity', 'dancap', 'eThaler', 'fabex', 'fabric-block-archiving', 'fabric-chaincode-haskell', 'fabric-chaincode-wasm', 'fabric-opssc', 'fabric-private-chaincode-wasm', 'fabric-private-chaincode', 'go-perun', 'hyperledger-community-management-tools', 'hyperledger-fabric-based-access-control', 'hyperledger-labs.github.io', 'keyhole-fabric-api-gateway', 'minbft', 'minifabric', 'modern-pharmacy-management', 'perun-doc', 'perun-eth-contracts', 'perun-node', 'perun-proposals', 'pluggable-hcs', 'private-data-objects', 'private-transaction-families', 'pubsub-interop', 'solang', 'umbra', 'university-course', 'voters', 'weaver-dlt-interoperability', 'xcsi' ]
+        repo: [ 'HyperFabGames', 'Media-Tracking-Platform-to-Tackle-Online-Piracy', 'PerformanceSandBox', 'acapy-java-client', 'bdls', 'blockchain-carbon-accounting', 'blockchain-verifier', 'business-partner-agent', 'business-partner-agent-chart', 'dancap', 'fabex', 'fablo', 'fabric-builder-k8s', 'fabric-chaincode-ocaml', 'fabric-machine', 'fabric-operations-console', 'fabric-operator', 'fabric-opssc', 'fabric-smart-client', 'fabric-token-sdk', 'go-perun', 'governance', 'hlf-connector', 'hlf-operator', 'homebrew-solang', 'hyperledger-community-management-tools', 'hyperledger-labs.github.io', 'karma-charity-platform', 'learning-tokens', 'minbft', 'minifabric', 'mirbft', 'mosaique-decentralized-workflows', 'neferti', 'nft-auction', 'nft-community-footprint', 'orion-sdk-go', 'orion-server', 'perun-cosmwasm-backend', 'perun-cosmwasm-contract', 'perun-credential-payment', 'perun-doc', 'perun-eth-backend', 'perun-eth-contracts', 'perun-node', 'perun-proposals', 'pluggable-hcs', 'private-data-objects', 'solang', 'sunyar-fabric', 'university-course', 'voters', 'weaver-dlt-interoperability', 'weft', 'yui-corda-ibc', 'yui-docs', 'yui-fabric-ibc', 'yui-ibc-solidity', 'yui-relayer' ]
 
     runs-on: ubuntu-latest
     container: ghcr.io/todogroup/repolinter:v0.10.1
@@ -20,5 +20,4 @@ jobs:
         with:
           name: repolinter-report-labs
           path: /${{ matrix.repo }}-repolinter-report.md
-
 
