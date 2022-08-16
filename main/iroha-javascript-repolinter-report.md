@@ -5,16 +5,16 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 6 | 3 | 6 | 4 | 19 |
+| 0 | 5 | 4 | 6 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
@@ -52,10 +52,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
@@ -75,6 +71,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
@@ -92,6 +92,31 @@ Below is a list of files or patterns that failed:
 - `src/proto/qry_responses_pb.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/proto/queries_pb.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/proto/transaction_pb.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example/chain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example/tls.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/chain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/cryptoHelper.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/queryHelper.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/txHelper.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/util.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example/smart-contract/getAccountTransactions.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `example/smart-contract/integrationHelpers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/commands/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/block_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/commands_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/endpoint_grpc_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/endpoint_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/endpoint_pb_service.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/primitive_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/proposal_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/qry_responses_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/queries_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/proto/transaction_pb.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/queries/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/validation/checks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/validation/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

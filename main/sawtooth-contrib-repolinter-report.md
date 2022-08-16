@@ -5,28 +5,28 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 3 | 7 | 5 | 19 |
+| 0 | 3 | 5 | 8 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
-  - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
+  - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -35,15 +35,11 @@ This Repolinter run generated the following results:
 
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
+Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
-
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
@@ -64,28 +60,30 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `marketplace/sawbuck_app/webpack.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
-### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`package.json`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
 
-- `**/test*`
-- `**/specs`
-- `**/**_test.go`
+- `setup.py`
+- `requirements.txt`
 
 </details>
 
@@ -114,6 +112,10 @@ Contains license (`README.md`).
 
 Found file (`MAINTAINERS.md`).
 
+### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
+
+Found file (`marketplace/addressing/tests`).
+
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
 Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
@@ -131,10 +133,6 @@ Licensee identified the license for project: Apache-2.0.
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
@@ -144,10 +142,6 @@ This rule was ignored for the following reason: ignored due to unsatisfied condi
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=java"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=python"
 
 </details>
 

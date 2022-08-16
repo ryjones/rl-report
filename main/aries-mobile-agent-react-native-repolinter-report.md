@@ -5,18 +5,17 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 5 | 7 | 2 | 19 |
+| 0 | 4 | 5 | 8 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
-  - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
@@ -24,6 +23,7 @@ This Repolinter run generated the following results:
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
@@ -52,15 +52,15 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -70,39 +70,73 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `App.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `commitlint.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `jest.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `metro.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `__tests__/App-test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `assets/images.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `assets/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/AppHeader/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/AppHeaderLarge/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/CurrentContact/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/CurrentCredential/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Errors/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/ListContacts/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/ListCredentials/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/LoadingOverlay/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Message/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Navbar/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Notifications/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Settings/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/SetupWizard/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Terms/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Workflow/Credential/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `components/Workflow/QRCodeScanner/styles.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-
-### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `**/test*`
-- `**/specs`
-- `**/**_test.go`
+- `app/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `app/metro.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/cli.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/jest.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/jestSetup.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/react-native.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/file.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/style.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/@react-native-async-storage/async-storage.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__tests__/util/timetravel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `genesis-utils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/declarations.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/constants.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/theme.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/react-i18next.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/react-native-argon2.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/react-native-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__tests__/helpers.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__tests__/luminance.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__tests__/testable.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/components/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/config/keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/contexts/theme.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/hooks/notifications.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/localization/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/navigators/defaultStackOptions.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/services/kdf.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/services/keychain.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/decline.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/error.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/fn.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/navigators.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/react-i18next.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/record.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/security.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/types/state.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/utils/cred-def.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/utils/helpers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/utils/luminance.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/utils/schema.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/utils/testable.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/@aries-framework/react-hooks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/components/chat/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/contexts/reducers/store.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/localization/en/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/App/localization/fr/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/custom/@react-navigation/core.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/__mocks__/custom/@react-navigation/native.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/bcovrin-test/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/bcovrin-test/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/candy-dev/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/candy-dev/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/indicio-test-net/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/indicio-test-net/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-builder-net/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-builder-net/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-main-net/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-main-net/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-staging-net/genesis-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/configs/ledgers/indy/sovrin-staging-net/pool-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `app/android/app/src/main/java/com/ariesbifold/MainActivity.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `app/android/app/src/main/java/com/ariesbifold/MainApplication.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -137,7 +171,11 @@ Contains license (`README.md`).
 
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
-Found file (`.github/workflows/repolinter.yml`).
+Found file (`.github/workflows/quality.yml`).
+
+### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
+
+Found file (`core/__tests__/testable.test.ts`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

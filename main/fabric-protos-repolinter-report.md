@@ -5,27 +5,27 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 3 | 3 | 8 | 5 | 19 |
+| 0 | 3 | 4 | 8 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
+  - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
-  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
-  - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -37,6 +37,10 @@ This Repolinter run generated the following results:
 
 Did not find file matching the specified patterns. (`SECURITY.md`).
 
+### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
+
+Doesn't contain license (`README.md`).
+
 ### ❌ `maintainers-file-exists` <a href="#user-content--maintainers-file-exists" id="-maintainers-file-exists">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
@@ -44,30 +48,19 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `MAINTAINERS.md`
 - `MAINTAINERS.rst`
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
-
-### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -76,6 +69,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `**/test*`
 - `**/specs`
 - `**/**_test.go`
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 </details>
 
@@ -96,10 +93,6 @@ Contains https://wiki.hyperledger.org/community/hyperledger-project-code-of-cond
 
 Found file (`README.md`).
 
-### ✅ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
-
-Contains license (`README.md`).
-
 ### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Found file (`CONTRIBUTING.md`).
@@ -107,6 +100,10 @@ Found file (`CONTRIBUTING.md`).
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`ci/azure-pipelines.yml`).
+
+### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+The first 7 lines contain all of the requested patterns. (`bindings/go-apiv2/doc.go`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
@@ -126,10 +123,6 @@ Licensee identified the license for project: Apache-2.0.
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

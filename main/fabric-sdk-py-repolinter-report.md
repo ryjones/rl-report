@@ -5,21 +5,19 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 2 | 1 | 12 | 4 | 19 |
+| 0 | 0 | 0 | 15 | 4 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
-- [Warning](#user-content-warning)
-  - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
+  - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
+  - [✅ `notice-file-exists`](#user-content--notice-file-exists)
   - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -31,37 +29,6 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
-
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
-
-## Warning <a href="#user-content-warning" id="warning">#</a>
-
-<details>
-<summary>Click to see rules</summary>
-
-### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`NOTICE*`).
-
-</details>
-
 ## Passed <a href="#user-content-passed" id="passed">#</a>
 
 <details>
@@ -70,6 +37,10 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 ### ✅ `apache-license-file` <a href="#user-content--apache-license-file" id="-apache-license-file">#</a>
 
 Contains Apache License.*Version 2.0 (`LICENSE`).
+
+### ✅ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
+
+Contains https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
@@ -91,9 +62,17 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`ci/azure-pipelines.yml`).
+
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 
 Found file (`CHANGELOG.md`).
+
+### ✅ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
+
+Found file (`NOTICE`).
 
 ### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 

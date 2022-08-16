@@ -5,13 +5,13 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 3 | 5 | 9 | 2 | 19 |
+| 0 | 2 | 6 | 9 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -41,15 +41,15 @@ Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -60,15 +60,30 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Below is a list of files or patterns that failed:
 
 - `tools/PTE/ccArgumentsGenerators/ccFunctionsBase.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `regression/barebones_caliper/benchmarks/callbacks/barebonesCreateAsset.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `tools/PTE/CITest/scripts/test_driver.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `tools/PTE/CITest/scripts/test/test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincodes/chaos/node/src/chaos-asset-contract.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincodes/chaos/node/src/chaos-asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincodes/chaos/node/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincodes/chaos/node/src/logger.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/engine/src/logger.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/engine/src/nodemanager.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/engine/src/scenariorunner.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/engine/src/start.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/app.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/eventHandler.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/gateway.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/transactionData.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/transactionRunner.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/utils/config.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/utils/helper.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/chaos/client/node/src/utils/logger.ts`: The first 7 lines do not contain the pattern(s): Copyright.
 - `regression/barebones/barebones_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/barebones/barebones_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `regression/barebones_caliper/barebones_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `regression/barebones_caliper/barebones_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/basicnetwork/basicnetwork_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/basicnetwork/basicnetwork_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `regression/chaos_peers/chaos_peers_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `regression/chaos_peers/chaos_peers_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/publish/publish_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/publish/publish_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `regression/smoke/smoke_suite_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.

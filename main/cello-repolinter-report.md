@@ -5,12 +5,8 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 3 | 4 | 10 | 2 | 19 |
+| 0 | 0 | 4 | 13 | 2 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
@@ -18,10 +14,13 @@ This Repolinter run generated the following results:
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
+  - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
+  - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -30,30 +29,6 @@ This Repolinter run generated the following results:
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
-
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
-
-### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -74,6 +49,8 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/config/theme.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/lambda/api.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/mock/agent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/mock/channel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/mock/network.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/mock/node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/mock/organization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/mock/user.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -102,8 +79,8 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/locales/en-US.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/dashboard/src/locales/zh-CN.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/dashboard/src/models/global.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/models/menu.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/models/login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/models/menu.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/models/node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/models/setting.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/models/user.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -111,7 +88,10 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/pages/Authorized.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/agent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/api.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/services/chaincode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/services/channel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/error.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/services/network.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/organization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/services/user.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -162,17 +142,6 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/components/TopNavHeader/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/components/_utils/pathTools.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/components/_utils/pathTools.test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/component.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/exception.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/form.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `src/dashboard/src/locales/zh-CN/globalHeader.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/menu.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/operatorAgent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/operatorNode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/operatorOrganization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `src/dashboard/src/locales/zh-CN/operatorUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `src/dashboard/src/locales/zh-CN/pwa.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/component.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/exception.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/form.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -180,10 +149,27 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/locales/en-US/login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/menu.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/operatorAgent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/en-US/operatorChaincode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/en-US/operatorChannel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/en-US/operatorNetwork.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/operatorNode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/operatorOrganization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/operatorUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/dashboard/src/locales/en-US/pwa.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/component.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/exception.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/form.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/dashboard/src/locales/zh-CN/globalHeader.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/login.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/menu.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorAgent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorChaincode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorChannel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorNetwork.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorNode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorOrganization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/operatorUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/dashboard/src/locales/zh-CN/pwa.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Exception/403.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Exception/404.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Exception/500.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -194,13 +180,20 @@ Below is a list of files or patterns that failed:
 - `src/dashboard/src/pages/Operator/UserManagement.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/dashboard/src/pages/Overview/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/User/Login.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `src/dashboard/src/locales/zh-CN/fabric/ca.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/locales/en-US/fabric/ca.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/locales/zh-CN/fabric/ca.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Exception/models/error.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/Agent/Agent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/Agent/newAgent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/pages/Operator/ChainCode/ChainCode.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/dashboard/src/pages/Operator/Channel/Channel.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/dashboard/src/pages/Operator/Network/Network.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/dashboard/src/pages/Operator/Network/newNetwork.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/Node/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/dashboard/src/pages/Operator/models/agent.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/pages/Operator/models/chaincode.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/pages/Operator/models/channel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/dashboard/src/pages/Operator/models/network.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/models/organization.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/Node/New/basicInfo.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `src/dashboard/src/pages/Operator/Node/New/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -252,6 +245,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Contains Apache License.*Version 2.0 (`LICENSE`).
 
+### ✅ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
+
+Contains https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
+
 ### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
 Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
@@ -267,6 +264,14 @@ Contains license (`README.md`).
 ### ✅ `maintainers-file-exists` <a href="#user-content--maintainers-file-exists" id="-maintainers-file-exists">#</a>
 
 Found file (`MAINTAINERS.md`).
+
+### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
+
+Found file (`CONTRIBUTING.md`).
+
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`ci/azure-pipelines.yml`).
 
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 

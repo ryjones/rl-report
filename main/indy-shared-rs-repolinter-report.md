@@ -5,14 +5,15 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 2 | 3 | 10 | 4 | 19 |
+| 0 | 1 | 5 | 10 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -29,7 +30,6 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
 ## Fail <a href="#user-content-fail" id="fail">#</a>
 
@@ -37,15 +37,15 @@ This Repolinter run generated the following results:
 
 Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -53,14 +53,27 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `wrappers/golang/indy-credx/types/common.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential_definition.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential_definition_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential_meta.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential_meta_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/credential_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/master_secret.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/master_secret_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/presentation.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/presentation_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/revocation_registry.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/revocation_registry_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/schema.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `wrappers/golang/indy-credx/types/schema_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`go.mod`).
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -126,10 +139,6 @@ Licensee identified the license for project: Apache-2.0.
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=go"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

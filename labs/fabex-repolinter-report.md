@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 2 | 6 | 4 | 19 |
+| 0 | 6 | 3 | 6 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `apache-license-file`](#user-content--apache-license-file)
@@ -14,8 +14,8 @@ This Repolinter run generated the following results:
   - [❌ `readme-file-exists`](#user-content--readme-file-exists)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
@@ -63,15 +63,15 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -82,12 +82,16 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Below is a list of files or patterns that failed:
 
 - `ui/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `engine.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `blockhandler/blockhandler_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `config/config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `db/cassandra.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `ledgerclient/ledgerclient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `ledgerclient/ledgerclient_mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `rest/handlers.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `rest/router.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `log/log.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `api/grpc/server.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `api/rest/handlers.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `api/rest/router.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 

@@ -5,16 +5,17 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 3 | 8 | 4 | 19 |
+| 0 | 3 | 5 | 8 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -26,7 +27,6 @@ This Repolinter run generated the following results:
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -48,15 +48,15 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `MAINTAINERS.md`
 - `MAINTAINERS.rst`
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -64,14 +64,34 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `aries-backchannels/verity/verity_backchannel.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/BaseController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/Server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/TestAgent.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/TestHarnessConfig.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/TsedLogger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/AgentStatusController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/ConnectionController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/CredentialController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/CredentialDefinitionController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/DidController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/IssueCredentialController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/IssueCredentialV2Controller.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/MediationController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/PresentProofController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/controllers/SchemaController.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/utils/ConnectionUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/utils/CredentialUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/utils/ProofUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/utils/httpUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `aries-backchannels/javascript/server/src/utils/ledgerUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. (`package.json`).
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -105,7 +125,7 @@ Found file (`CONTRIBUTING.md`).
 
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
-Found file (`.github/workflows/test-harness-acapy-afgo.yml`).
+Found file (`.github/workflows/generate-summary-results.yml`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -125,10 +145,6 @@ Licensee identified the license for project: Apache-2.0.
 
 <details>
 <summary>Click to see rules</summary>
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=javascript"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

@@ -18,8 +18,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -41,14 +41,26 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `examples/fabric-contract-example-as-service/src/test/java/org/example/MyAssetContractTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-gradle/src/main/java/org/example/MyAsset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-gradle/src/main/java/org/example/MyAssetContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-gradle/src/test/java/org/example/MyAssetContractTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-maven/src/main/java/org/example/MyAsset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-maven/src/main/java/org/example/MyAssetContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-maven/src/test/java/org/example/MyAssetContractTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/ledger-api/src/main/java/org/example/LedgerAPIContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/ledger-api/src/main/java/org/example/MyAsset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-as-service/src/main/java/org/example/contract/MyAsset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/fabric-contract-example-as-service/src/main/java/org/example/contract/MyAssetContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-chaincode-integration-test/src/test/java/org/hyperleder/fabric/shim/integration/util/InvokeHelper.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fabric-chaincode-integration-test/src/contracts/bare-gradle/src/main/java/org/hyperledger/fabric/example/BareGradle.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-chaincode-integration-test/src/contracts/bare-maven/src/main/java/org/hyperledger/fabric/example/BareMaven.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-chaincode-integration-test/src/contracts/fabric-ledger-api/src/main/java/org/hyperledger/fabric/example/AllLedgerAPI.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-chaincode-integration-test/src/contracts/fabric-shim-api/src/main/java/org/hyperledger/fabric/example/AllAPI.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-chaincode-integration-test/src/contracts/fabric-shim-api/src/main/java/org/hyperledger/fabric/example/EndorsementCC.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fabric-chaincode-integration-test/src/contracts/wrapper-maven/src/main/java/org/hyperledger/fabric/example/WrapperMaven.java`: The first 7 lines do not contain the pattern(s): Copyright.
 
 </details>
 
@@ -85,13 +97,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`ci/azure-pipelines.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

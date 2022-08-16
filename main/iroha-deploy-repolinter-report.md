@@ -5,16 +5,16 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 6 | 4 | 5 | 4 | 19 |
+| 0 | 5 | 5 | 5 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `readme-file-exists`](#user-content--readme-file-exists)
+  - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
@@ -22,7 +22,7 @@ This Repolinter run generated the following results:
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
-  - [✅ `readme-references-license`](#user-content--readme-references-license)
+  - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
@@ -37,12 +37,9 @@ This Repolinter run generated the following results:
 
 Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
 
-### ❌ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
+### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `README.md`
-- `README`
+Doesn't contain license (`README.md`).
 
 ### ❌ `maintainers-file-exists` <a href="#user-content--maintainers-file-exists" id="-maintainers-file-exists">#</a>
 
@@ -54,10 +51,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 ### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
-
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
@@ -78,6 +71,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
@@ -87,11 +84,15 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!**/node_modules/**`
+- `**/*.ts`
 - `**/*.go`
+- `**/*.java`
+- `!**/node_modules/**`
 - `!**/vendor/**`
 - `!**/*.pb.go`
 - `!**/*.gen.go`
+- `!**/mocks/*.go`
+- `!**/third_party/**`
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -123,12 +124,9 @@ Contains Apache License.*Version 2.0 (`LICENSE`).
 
 Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
 
-### ✅ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
+### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `README.md`
-- `README`
+Found file (`README.md`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

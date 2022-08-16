@@ -5,11 +5,10 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 2 | 13 | 4 | 19 |
+| 0 | 0 | 1 | 14 | 4 | 19 |
 
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
-  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -18,8 +17,9 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
+  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -38,38 +38,6 @@ This Repolinter run generated the following results:
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
-
-### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-Below is a list of files or patterns that failed:
-
-- `lib/mocks/operations_server.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/mocks/server_request_context.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `cmd/fabric-ca-client/command/mocks/Command.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/certificaterequest/mocks/CertificateRequest.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/certificaterequest/mocks/RequestContext.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mocks/FabricCADB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mocks/SqlxDB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mocks/fabricCATX.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mocks/migrator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mocks/sqlxTx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/FabricCATx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/Lib.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/User.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/cred_db_accessor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/fabric_cadb.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/my_issuer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/idemix/mocks/server_request_ctx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/user/mocks/result.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/user/mocks/userDB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/user/mocks/userTx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mysql/mocks/fabricCADB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/mysql/mocks/fabricCATx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/postgres/mocks/fabricCADB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/postgres/mocks/fabricCATx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/sqlite/mocks/create.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/sqlite/mocks/fabricCADB.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `lib/server/db/sqlite/mocks/fabricCATx.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -106,13 +74,17 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`ci/azure-pipelines.yml`).
+
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 
 Found file (`CHANGELOG.md`).
 
-### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Found file (`ci/azure-pipelines.yml`).
+All files passed this test.
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

@@ -5,14 +5,13 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 2 | 4 | 10 | 3 | 19 |
+| 0 | 0 | 6 | 11 | 2 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
@@ -23,38 +22,22 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
-
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -64,9 +47,52 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `core/network/fabric-interop-cc/contracts/interop/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/network/fabric-interop-cc/contracts/interop/mocks/clientIdentity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/network/fabric-interop-cc/contracts/interop/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/simpleasset/get-network-details.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/simpleasset/truffle-config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/simpleasset/app/AssetExchangeERC20.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/simpleasset/migrations/1_initial_migration.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/simpleasset/migrations/2_deploy_contracts.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tests/network-setups/besu/artifacts/network1/createKeyFile.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tests/network-setups/besu/artifacts/network2/createKeyFile.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/__tests__/cli-integration.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/cli.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/types.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/identity-management/iin-agent/src/common/ledgerBase.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/besu-cli.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/generate.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/extensions/cli-extension.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/helper/besu-functions.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/helper/helper.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/claim.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/exchange.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/get-balance.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/is-locked.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/issue.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/lock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/besu/besu-cli/src/commands/asset/unlock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/assetmgmt_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/bondasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/bondasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/main.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/tokenasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleasset/tokenasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/assetmgmt_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/baseclass.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/bondasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/bondasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/main.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/tokenasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassetandinterop/tokenasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/assetPledgeMap.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/assetmgmt_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/bondasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/bondasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/main.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/tokenasset.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simpleassettransfer/tokenasset_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simplestate/simplestate_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/fabric/simplestatewithacl/simplestate_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/network/fabric-interop-cc/interfaces/asset-mgmt/asset_locks_contract_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -75,6 +101,14 @@ Did not find a file matching the specified patterns. (`package.json`).
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`go.mod`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
+
+- `pom.xml`
+- `build.xml`
+- `build.gradle`
 
 </details>
 
@@ -111,6 +145,10 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/deploy_corda-pkgs.yml`).
+
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
 Found file (`tests`).
@@ -133,10 +171,6 @@ Licensee identified the license for project: Apache-2.0.
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=ruby"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=java"
 
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 

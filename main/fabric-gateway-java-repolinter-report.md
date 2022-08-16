@@ -5,13 +5,12 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 3 | 2 | 10 | 4 | 19 |
+| 0 | 1 | 3 | 11 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
@@ -21,6 +20,7 @@ This Repolinter run generated the following results:
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -37,28 +37,15 @@ This Repolinter run generated the following results:
 
 Doesn't contain license (`README.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -71,6 +58,10 @@ Below is a list of files or patterns that failed:
 - `src/test/fixtures/chaincode/node/fabcar/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/test/fixtures/chaincode/node/marbles0/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `src/test/fixtures/chaincode/node/fabcar/lib/fabcar.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `src/test/java/scenario/CleanupScenarioTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/test/java/scenario/RunScenarioTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/test/java/scenario/ScenarioSteps.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `src/test/java/scenario/SetupScenarioTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -102,6 +93,10 @@ Found file (`MAINTAINERS.md`).
 ### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Found file (`CONTRIBUTING.md`).
+
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/vulnerability-scan.yml`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

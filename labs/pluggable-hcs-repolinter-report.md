@@ -19,8 +19,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `notice-file-exists`](#user-content--notice-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -61,14 +61,6 @@ Below is a list of files or patterns that failed:
 - `common/metrics/metricsfakes/gauge.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `common/metrics/metricsfakes/histogram.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `common/metrics/metricsfakes/provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `common/policies/mocks/identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `common/policies/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/aclmgmt/mocks/defaultaclprovider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/aclmgmt/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/cclifecycle/mocks/enumerator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/cclifecycle/mocks/metadata_change_listener.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/cclifecycle/mocks/query.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/cclifecycle/mocks/query_creator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/fake/application_config_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/fake/context_registry.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/fake/launch_registry.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -90,8 +82,8 @@ Below is a list of files or patterns that failed:
 - `core/chaincode/mock/lifecycle.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/peer_ledger.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/chaincode/mock/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/chaincode/mock/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/results_iterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/runtime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/mock/transaction_registry.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -110,10 +102,6 @@ Below is a list of files or patterns that failed:
 - `core/endorser/fake/query_executor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/endorser/fake/support.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/endorser/fake/tx_simulator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/endorser/mocks/channel_state_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/endorser/mocks/plugin_mapper.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/endorser/mocks/query_creator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/endorser/mocks/transient_store_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/mock/cc_event_listener.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/mock/cc_event_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/mock/custom_tx_processor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -129,57 +117,18 @@ Below is a list of files or patterns that failed:
 - `core/peer/mock/collection_policy_checker.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/peer/mock/identity_deserializer_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/peer/mock/peer_ledger.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/channel_policy_manager_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/channel_policy_reference_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/policy/mocks/signature_policy_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/mock/chaincode.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/mock/chaincode_stream_handler.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/mock/selfdescribingsyscc.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/channel_response.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/command_registrar.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/local_response.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/response_parser.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/service_response.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/cmd/mocks/stub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/channel_config_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/channel_policy_manager_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/config_block_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/configtx_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/evaluator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/gossip_support.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/msp_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/mocks/verifier.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/api/mocks/security_advisor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/comm/mocks/mock_stream.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/app_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/capability_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/collection_access_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/collection_access_policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/collection_store.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/committer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/config_history_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/missing_pvt_data_tracker.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/reconciliation_fetcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/rw_set_scanner.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/privdata/mocks/sleeper.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `gossip/service/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/app_msg_processor.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/app_msg_processor_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/chain.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/chain_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/consenter.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/consenter_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `orderer/consensus/hcs/hcs_factory_impl.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `orderer/consensus/hcs/hcs_factory_impl.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/metrics.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/metrics_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `orderer/consensus/mocks/mock_consenter_support.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `bccsp/idemix/handlers/mock/big.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `bccsp/idemix/handlers/mock/credential.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `bccsp/idemix/handlers/mock/credrequest.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -233,10 +182,6 @@ Below is a list of files or patterns that failed:
 - `core/chaincode/persistence/mock/osfileinfo.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/platforms/mock/package_writer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/chaincode/platforms/mock/platform.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/mocks/application_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/mocks/capability_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/mocks/query_executor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/mocks/validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/common/privdata/mock/chaincode_info_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/common/privdata/mock/identity_deserializer_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/common/privdata/mock/query_executor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -244,11 +189,6 @@ Below is a list of files or patterns that failed:
 - `core/container/dockercontroller/mock/dockerclient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/container/dockercontroller/mock/platform_builder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/pvtdatapolicy/mock/coll_info_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/scc/cscc/mocks/acl_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/scc/cscc/mocks/chaincode_stub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/scc/cscc/mocks/channel_policy_manager_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/scc/cscc/mocks/policy_checker.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/scc/cscc/mocks/store_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/lscc/mock/application.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/lscc/mock/application_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/lscc/mock/cc_package.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -259,7 +199,6 @@ Below is a list of files or patterns that failed:
 - `core/scc/lscc/mock/results_iterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/lscc/mock/state_query_iterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/scc/lscc/mock/system_chaincode_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `discovery/support/gossip/mocks/gossip.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/configtxgen/encoder/fakes/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/chaincode/mock/deliver.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/chaincode/mock/deliver_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -267,8 +206,6 @@ Below is a list of files or patterns that failed:
 - `internal/peer/channel/mock/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/common/mock/deliverservice.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/common/mock/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/peer/gossip/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/peer/gossip/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/node/mock/get_ledger.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/node/mock/peer_ledger.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/packaging/mock/platform.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -282,75 +219,14 @@ Below is a list of files or patterns that failed:
 - `orderer/common/broadcast/mock/metrics_counter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/common/broadcast/mock/metrics_histogram.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/common/broadcast/mock/metrics_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/channelparticipation/mocks/channel_management.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/block_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/block_verifier.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/chain_puller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/channel_lister.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/cluster_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/communicator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/dispatcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/handler.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/ledger_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/ledger_writer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/metrics_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/secure_dialer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/step_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/step_stream.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/verifier_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/cluster/mocks/verifier_retriever.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/channel_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/channel_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/config_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/configtx_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/metadata_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/orderer_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/sig_filter_support.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/msgprocessor/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/channel_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/channel_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/configtx_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/orderer_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/policy.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/read_writer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/multichannel/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/onboarding/mocks/chain_replicator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/onboarding/mocks/factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/onboarding/mocks/read_writer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/onboarding/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/server/mocks/health_checker.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/server/mocks/identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/common/server/mocks/signer_serializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/chain_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/configurator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/inactive_chain_registry.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/message_receiver.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/mock_blockpuller.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/mock_rpc.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/msp.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/orderer_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/orderer_org.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/etcdraft/mocks/receiver_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/hcs/factory/hcs_support.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `orderer/consensus/hcs/factory/hcs_support.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `orderer/consensus/hcs/mock/app_msg_processor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/hcs/mock/block_cipher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/channel_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/channel_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/hcs/mock/consensus_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `orderer/consensus/hcs/mock/hcs_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/hcs_client_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/health_checker.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/identity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/hcs/mock/mirror_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/orderer_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/hcs/mock/signer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -365,23 +241,6 @@ Below is a list of files or patterns that failed:
 - `orderer/consensus/kafka/mock/orderer_capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/kafka/mock/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `orderer/consensus/kafka/mock/sync_producer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `orderer/consensus/solo/mocks/orderer_config.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/mapper.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/plugin.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/plugin_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v14/mocks/query_executor_creator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/channel_policy_manager_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/channel_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/collection_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/dispatcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/ledger_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/mocks/query_executor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/common/validation/statebased/mocks/collection_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/common/validation/statebased/mocks/key_level_validation_parameter_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/mocks/transaction_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/tests/fakes/signer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/lifecycle/chaincode/mock/broadcast_client.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/peer/lifecycle/chaincode/mock/deliver.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -400,33 +259,6 @@ Below is a list of files or patterns that failed:
 - `internal/pkg/peer/blocksprovider/fake/orderer_connection_source.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/pkg/peer/blocksprovider/fake/signer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `internal/pkg/peer/blocksprovider/fake/sleeper.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/channel_policy_manager_getter.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/lifecycle_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/mapper.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/plugin.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/plugin_factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/policy_manager.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/plugindispatcher/mocks/query_executor_creator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/committer/txvalidator/v20/valinforetriever/mocks/lifecycle_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v12/mocks/capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v12/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v12/mocks/policy_evaluator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v12/mocks/state.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v12/mocks/state_fetcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/policy_evaluator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/state.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/state_based_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v13/mocks/state_fetcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/capabilities.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/collection_resources.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/identity_deserializer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/state.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/state_based_validator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/handlers/validation/builtin/v20/mocks/state_fetcher.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/txmgmt/privacyenabledstate/mock/channelinfo_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/txmgmt/queryutil/mock/query_executer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/txmgmt/statedb/mock/namespace_provider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -435,6 +267,7 @@ Below is a list of files or patterns that failed:
 - `core/ledger/kvledger/txmgmt/validation/mock/postOrderSimulatorProvider.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/txmgmt/validation/mock/processor.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/ledger/kvledger/txmgmt/validation/mock/txsim.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `core/chaincode/platforms/java/testdata/gradle/src/main/java/example/ExampleCC.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -483,13 +316,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`ci/azure-pipelines.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 

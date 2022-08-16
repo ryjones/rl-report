@@ -5,14 +5,14 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 1 | 10 | 4 | 19 |
+| 0 | 3 | 2 | 10 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -48,29 +48,21 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `MAINTAINERS.md`
 - `MAINTAINERS.rst`
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
 Below is a list of files or patterns that failed:
 
-- `api/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `messages/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `usig/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/internal/clientstate/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/internal/messagelog/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/internal/peerstate/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/internal/requestlist/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `core/internal/timer/mock/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `core/internal/viewstate/mocks/mock.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -105,7 +97,7 @@ Found file (`NOTICE`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
-Found file (`core/testutils_test.go`).
+Found file (`testing`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

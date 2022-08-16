@@ -5,9 +5,10 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 0 | 1 | 15 | 3 | 19 |
+| 0 | 0 | 2 | 14 | 3 | 19 |
 
 - [Warning](#user-content-warning)
+  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
@@ -17,10 +18,9 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `notice-file-exists`](#user-content--notice-file-exists)
-  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -34,6 +34,14 @@ This Repolinter run generated the following results:
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+Below is a list of files or patterns that failed:
+
+- `benchmark/config/store.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `ethereum/permissioning/src/test/java/org/hyperledger/besu/ethereum/permissioning/GoQuorumQip714GateTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `ethereum/rlp/src/main/java/org/hyperledger/besu/ethereum/rlp/package-info.java`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -74,21 +82,17 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`.circleci/config.yml`).
 
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
+
 ### ✅ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Found file (`NOTICE.md`).
-
-### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-All files passed this test.
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

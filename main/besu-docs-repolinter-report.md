@@ -18,8 +18,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -41,10 +41,7 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Below is a list of files or patterns that failed:
-
-- `custom_theme/assets/javascripts/custom_theme.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `custom_theme/assets/javascripts/zoomify.min.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+The first 7 lines do not contain the pattern(s): Copyright, License (`custom_theme/assets/javascripts/custom_theme.js`).
 
 </details>
 
@@ -81,13 +78,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`.circleci/config.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

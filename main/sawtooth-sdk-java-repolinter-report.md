@@ -5,14 +5,14 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 2 | 9 | 4 | 19 |
+| 0 | 3 | 3 | 9 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
@@ -35,7 +35,7 @@ This Repolinter run generated the following results:
 
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
+Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
@@ -45,15 +45,15 @@ Doesn't contain license (`README.md`).
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -61,14 +61,12 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `sawtooth-sdk-transaction-processor/src/main/java/sawtooth/sdk/messaging/package-info.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sawtooth-sdk-transaction-processor/src/main/java/sawtooth/sdk/processor/package-info.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sawtooth-sdk-transaction-processor/src/test/java/sawtooth/sdk/processor/StreamContextTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `sawtooth-sdk-transaction-processor/src/main/java/sawtooth/sdk/processor/exceptions/package-info.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 

@@ -5,15 +5,15 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 2 | 7 | 5 | 19 |
+| 0 | 4 | 3 | 7 | 5 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
@@ -48,10 +48,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
@@ -71,6 +67,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
@@ -87,6 +87,12 @@ Below is a list of files or patterns that failed:
 - `samples/aspnetcore/wwwroot/lib/jquery/dist/jquery.min.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `samples/aspnetcore/wwwroot/lib/jquery/dist/jquery.slim.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `samples/aspnetcore/wwwroot/lib/jquery/dist/jquery.slim.min.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/WeatherForecastPage.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/tests/ChangeRouteShould.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/tests/CounterShouldCount.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/tests/ExecutionSide.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/tests/WeatherForecastPage.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `samples/blazorHosted/Tests/EndToEnd.TestCafe.Tests/util/LocalStorage.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 

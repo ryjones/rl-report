@@ -20,8 +20,8 @@ This Repolinter run generated the following results:
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -64,11 +64,15 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!**/node_modules/**`
+- `**/*.ts`
 - `**/*.go`
+- `**/*.java`
+- `!**/node_modules/**`
 - `!**/vendor/**`
 - `!**/*.pb.go`
 - `!**/*.gen.go`
+- `!**/mocks/*.go`
+- `!**/third_party/**`
 
 </details>
 
@@ -93,13 +97,13 @@ Found file (`README.md`).
 
 Found file (`MAINTAINERS.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`Jenkinsfile.ci`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

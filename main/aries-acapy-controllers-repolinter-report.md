@@ -5,14 +5,14 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 3 | 8 | 4 | 19 |
+| 0 | 3 | 4 | 8 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -44,10 +44,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `MAINTAINERS.md`
 - `MAINTAINERS.rst`
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
@@ -67,6 +63,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
@@ -84,6 +84,70 @@ Below is a list of files or patterns that failed:
 - `AliceFaberAcmeDemo/controllers/acme-controller/services/AgentService.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `AliceFaberAcmeDemo/controllers/acme-controller/services/NavLinkService.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `AliceFaberAcmeDemo/controllers/alice-controller/e2e/protractor.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/main.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/polyfills.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/typings.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/e2e/src/app.e2e-spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/e2e/src/app.po.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/app-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/app.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/environments/environment.prod.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/environments/environment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/connection-resolver.service.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/connection-resolver.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/connection-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/connection.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/credential-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/credential.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/enums/agent-status.enum.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/models/nav-link.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/models/nav-link.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/proof-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/proof.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/agent.service.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/agent.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/interceptor.service.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/interceptor.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/nav-link.service.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/services/nav-link.service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/shared.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/app/app.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/app/app.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav/nav.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav/nav.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav-card/nav-card.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav-card/nav-card.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav-card-list/nav-card-list.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/components/nav-card-list/nav-card-list.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/pipes/to-date.pipe.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/pipes/to-date.pipe.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/accept-connection/accept-connection.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/accept-connection/accept-connection.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection/connection.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection/connection.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection-card/connection-card.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection-card/connection-card.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection-list/connection-list.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/connection-list/connection-list.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/new-connection/new-connection.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/connection/components/new-connection/new-connection.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential/credential.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential/credential.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential-card/credential-card.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential-card/credential-card.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential-list/credential-list.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/credential/components/credential-list/credential-list.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof/proof.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof/proof.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof-card/proof-card.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof-card/proof-card.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof-list/proof-list.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/proof/components/proof-list/proof-list.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/components/component-nav/component-nav.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/components/component-nav/component-nav.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/components/empty-list/empty-list.component.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `AliceFaberAcmeDemo/controllers/alice-controller/src/app/shared/components/empty-list/empty-list.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 

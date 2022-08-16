@@ -5,22 +5,20 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 1 | 10 | 4 | 19 |
+| 0 | 0 | 0 | 15 | 4 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
-  - [❌ `security-file-matches`](#user-content--security-file-matches)
-  - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
-- [Warning](#user-content-warning)
-  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
+  - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
+  - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
+  - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `notice-file-exists`](#user-content--notice-file-exists)
+  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -31,53 +29,6 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
 
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
-
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
-
-### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
-
-Did not find file matching the specified patterns. (`SECURITY.md`).
-
-### ❌ `maintainers-file-exists` <a href="#user-content--maintainers-file-exists" id="-maintainers-file-exists">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `MAINTAINERS.md`
-- `MAINTAINERS.rst`
-
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
-
-## Warning <a href="#user-content-warning" id="warning">#</a>
-
-<details>
-<summary>Click to see rules</summary>
-
-### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-Below is a list of files or patterns that failed:
-
-- `internal/mocks/ChAPI.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/ChClient.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/ChProposalResponder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/ChUpdateResponder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/Channel.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/ChannelProposal.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/Closer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/CommBackend.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/Dialer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/Listener.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/Registerer.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/SessionAPI.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `internal/mocks/WireBus.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-
-</details>
-
 ## Passed <a href="#user-content-passed" id="passed">#</a>
 
 <details>
@@ -87,6 +38,14 @@ Below is a list of files or patterns that failed:
 
 Contains Apache License.*Version 2.0 (`LICENSE`).
 
+### ✅ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
+
+Contains https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
+
+### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
+
+Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
+
 ### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
 Found file (`README.md`).
@@ -94,6 +53,10 @@ Found file (`README.md`).
 ### ✅ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
 Contains license (`README.md`).
+
+### ✅ `maintainers-file-exists` <a href="#user-content--maintainers-file-exists" id="-maintainers-file-exists">#</a>
+
+Found file (`MAINTAINERS.md`).
 
 ### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
@@ -103,9 +66,17 @@ Found file (`CONTRIBUTING.md`).
 
 Found file (`.circleci/config.yml`).
 
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
+
 ### ✅ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Found file (`NOTICE`).
+
+### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+All files passed this test.
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

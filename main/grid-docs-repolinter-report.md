@@ -11,18 +11,18 @@ This Repolinter run generated the following results:
   - [❌ `apache-license-file`](#user-content--apache-license-file)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
+  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
-  - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
+  - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
@@ -39,15 +39,24 @@ Doesn't contain Apache License.*Version 2.0 (`LICENSE`).
 
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
+Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
+
+- `circle.yml`
+- `.circleci/config.yml`
+- `ci/azure-pipelines.yml`
+- `.ci/azure-pipelines.yml`
+- `Jenkinsfile`
+- `Jenkinsfile.ci`
+- `Jenkinsfile.cd`
+- `.github/workflows/*.yml`
 
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
@@ -55,17 +64,13 @@ Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
-
-### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `**/test*`
-- `**/specs`
-- `**/**_test.go`
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -94,13 +99,13 @@ Contains license (`README.md`).
 
 Found file (`MAINTAINERS.md`).
 
-### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Found file (`Jenkinsfile`).
-
 ### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
 All files passed this test.
+
+### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
+
+Found file (`docs/0.3/purchase_order/test_po.xml`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

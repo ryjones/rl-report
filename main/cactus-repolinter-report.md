@@ -5,23 +5,23 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 1 | 3 | 12 | 3 | 19 |
+| 0 | 0 | 4 | 13 | 2 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `security-file-matches`](#user-content--security-file-matches)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
+  - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `code-of-conduct-file`](#user-content--code-of-conduct-file)
+  - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -29,14 +29,6 @@ This Repolinter run generated the following results:
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-  - [`package-metadata-exists`](#user-content-package-metadata-exists)
-
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
-
-Did not find file matching the specified patterns. (`SECURITY.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -53,6 +45,7 @@ Below is a list of files or patterns that failed:
 
 - `changelog.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `commitlint.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `jest.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `karma.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `webpack.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `webpack.dev.node.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -63,12 +56,992 @@ Below is a list of files or patterns that failed:
 - `tools/generate-secp256k1-key-pair.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `tools/get-package-info-list.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `tools/validate-bundle-names.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `packages/cactus-cockpit/karma.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `packages/cactus-cockpit/e2e/protractor.conf.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/hardhat.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/webpack.config.overrides.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-discounted-asset-trade/read-ledger-state.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/webpack.config.overrides.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/knex/knex.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages-python/cactus_validator_socketio_indy/testcli/testsock.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages-python/cactus_validator_socketio_iroha/testcli/testsock.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/knex/migrations/20220331132128_create_logs_table.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/docker/fabric-all-in-one/asset-transfer-basic-utils/enrollAdmin.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/docker/fabric-all-in-one/asset-transfer-basic-utils/query.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/docker/fabric-all-in-one/asset-transfer-basic-utils/registerUser.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `tools/docker/indy-sdk-cli/from-indy-sdk/util.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/public-api.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/resources/cactus-dummy-package/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/wasm-pack/cactus_plugin_keychain_memory_wasm.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/resources/fixtures/addOrgX/populate-docker.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/sync-npm-deps-to-tsc-projects.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/BusinessLogicCheckEthereumValidator.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/RequestInfo.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/TestEthereumVerifier.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/check-ethereum-validator.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/copyBLPConfig.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/copyStaticAssets.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/replaceBLPConfigPath.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-discounted-asset-trade/www.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-electricity-trade/www.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/check-open-api-json-specs.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/check-package-json-sort.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/check-sibling-dep-version-consistency.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/has-property.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/is-std-lib-record.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `tools/custom-checks/run-custom-checks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/async-exit-hook/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/convict-format-with-validator/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/es-main/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/is-port-reachable/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/web3-eea/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `typings/web3js-quorum/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/config/BLP_config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/constants.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/main.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/polyfills.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/zone-flags.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/constants.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/main.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/polyfills.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/zone-flags.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/knex/knexfile.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/app/app-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/app/app.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/app/app.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/environments/environment.prod.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/environments/environment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/app-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/app.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/app.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/environments/environment.prod.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/environments/environment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/plugin-factory-htlc-coordinator-besu.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/plugin-htlc-coordinator-besu.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/i-ipfs-http-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/plugin-factory-object-store.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/plugin-object-store-ipfs.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/carbon-accounting-app-cli.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/carbon-accounting-app.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/i-carbon-accounting-contract-deployment-info.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/i-eth-contract-deployment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/i-fabric-contract-deployment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/go/shipment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/supply-chain-app-cli.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/supply-chain-app.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/i-eth-contract-deployment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/i-fabric-contract-deployment.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/i-supply-chain-contract-deployment-info.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bamboo-harvest/bamboo-harvest-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bamboo-harvest/bamboo-harvest.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bookshelf/bookshelf-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bookshelf/bookshelf.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/common/auth-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/shipment/shipment-routing.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/shipment/shipment.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/main/typescript/api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/main/typescript/default-consortium-provider.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/api-server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/proto.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/bools.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/checks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/coded-error.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/i-async-provider.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/js-object-signer.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/key-converter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/objects.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/secp256k1-keys.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/servers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/signer-key-pair.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/signer-key-pairs.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/strings.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/consensus-has-transaction-finality.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/consortium-repository.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/plugin-registry.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/i-plugin-factory-options.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin-factory-factory.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/plugin-consortium-manual.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/plugin-factory-consortium-manual.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/plugin-factory-htlc-eth-besu.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/plugin-htlc-eth-besu.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/plugin-factory-htlc-eth-besu-erc20.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/plugin-htlc-eth-besu-erc20.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/plugin-keychain-aws-sm.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/plugin-keychain-azure-kv.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/plugin-keychain-google-sm.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/plugin-keychain-memory.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/plugin-keychain-memory-wasm.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/plugin-factory-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/plugin-keychain-vault-remote-adapter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/plugin-keychain-vault.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/model-type-guards.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/plugin-ledger-connector-besu.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/plugin-ledger-connector-fabric.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric-socketio/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric-socketio/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/plugin-ledger-connector-corda.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/plugin-ledger-connector-iroha.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/model-type-guards.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/plugin-ledger-connector-quorum.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/model-type-guards.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/plugin-ledger-connector-xdai.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/knex.config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/make-checks-ledgers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/make-checks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/i-key-pair.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/i-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-verifier-client/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-verifier-client/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/main/typescript/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/main/typescript/index.web.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/main/typescript/public-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/web-services/counterparty-htlc-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/web-services/own-htlc-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/web-services/withdraw-counterparty-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/web-services/get-object-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/web-services/has-object-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/web-services/set-object-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/integration/plugin-object-store-ipfs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/unit/plugin-object-store-ipfs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/src/test/typescript/integration/check-config-files.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-check-connection-ethereum-validator/src/test/typescript/integration/check-connection-to-ledger.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/main/typescript/infrastructure/carbon-accounting-app-dummy-infrastructure.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/test/typescript/integration/admin-enroll-v1-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/business-logic-plugin/carbon-accounting-plugin.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/app/common/page-heading/page-heading-component.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-frontend/src/app/common/page-heading/page-heading.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/main/typescript/infrastructure/supply-chain-app-dummy-infrastructure.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/test/typescript/integration/supply-chain-backend-api-calls.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/test/typescript/integration/supply-chain-cli-via-npm-script.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-backend/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/supply-chain-cactus-plugin.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bamboo-harvest/bamboo-harvest-detail/bamboo-harvest-detail.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bamboo-harvest/bamboo-harvest-list/bamboo-harvest-list.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bookshelf/bookshelf-detail/bookshelf-detail.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/bookshelf/bookshelf-list/bookshelf-list.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/common/page-heading/page-heading-component.module.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/common/page-heading/page-heading.component.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/shipment/shipment-detail/shipment-detail.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-frontend/src/app/shipment/shipment-list/shipment-list.page.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/test/typescript/integration/default-consortium-provider.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-api-client/src/test/typescript/unit/socketio-api-client.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/api-client/api-server-api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/authzn/authorizer-factory.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/authzn/i-authorization-config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/authzn/is-express-jwt-options-type-guard.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/cmd/cactus-api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/common/determine-address-family.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/config/authorization-protocol.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/config/config-service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/config/convict-plugin-array-format.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/config/self-signed-pki-generator.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/model/is-healthcheck-response-type-guard.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/web-services/watch-healthcheck-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/benchmark/artillery-api-benchmark.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/jwt-endpoint-authorization.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/jwt-endpoint-authz-scope-enforcement.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/jwt-socketio-endpoint-authorization.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/jwt-unprotected-endpoint-authz-ops-confirm.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/jwt-unprotected-endpoint-authz.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/plugin-import-from-github.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/plugin-import-without-install.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/integration/remote-plugin-imports.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/grpc-js-proto-loader-client-healthcheck.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/grpc-proto-gen-ts-client-healthcheck.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/grpc-proto-gen-ts-client-m-tls-enabled.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/main/typescript/routing-interface/www.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/DriverCommon.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/ValidatorAuthentication.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/Verifier.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/VerifierAuthentication.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/VerifierFactory.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-socketio-server/src/test/typescript/unit/validator-registry.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/http/http-status-code-errors.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/logging/logger-provider.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/main/typescript/logging/logger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/fixtures/dummy-classes.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/bools.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/checks.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/coded-error.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/js-object-signer.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/key-converter.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/servers.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/web-services/authorization-options-provider.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/web-services/install-open-api-validator-middleware.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/main/typescript/web-services/register-web-service-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core/src/test/typescript/unit/plugin-registry.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/i-cactus-plugin.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/plugin-factory.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/consortium/get-consortium-jws-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/consortium/get-node-jws-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/consortium/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/get-single-status-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/get-status-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/initialize-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/new-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/refund-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/web-services/withdraw-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/get-single-status-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/get-status-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/initialize-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/new-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/refund-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/web-services/withdraw-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/webservices/delete-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/webservices/get-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/webservices/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/webservices/has-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/webservices/set-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/test/typescript/integration/plugin-factory-keychain.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/test/typescript/integration/plugin-keychain-aws-sm.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/test/typescript/unit/api-surface.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/web-services/delete-keychain-entry-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/web-services/get-keychain-entry-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/web-services/has-keychain-entry-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/web-services/set-keychain-entry-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/test/typescript/integration/plugin-keychain-azure-kv.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/test/typescript/mock/plugin-keychain-azure-kv-mock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/webservices/delete-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/webservices/get-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/webservices/has-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/webservices/set-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/test/typescript/integration/plugin-factory-keychain.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/test/typescript/integration/plugin-keychain-google-sm.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/test/typescript/mock/plugin-keychain-google-sm-mock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/get-prometheus-exporter-metrics/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/test/typescript/unit/plugin-keychain-memory.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/webservices/delete-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/webservices/get-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/webservices/has-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/webservices/set-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/test/typescript/unit/plugin-keychain-memory-wasm.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/web-services/delete-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/web-services/get-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/web-services/has-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/web-services/set-keychain-entry-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/test/typescript/integration/cactus-keychain-vault-server.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/test/typescript/integration/plugin-keychain-vault.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/api-client/besu-api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/deploy-contract-solidity-bytecode-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-balance-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-besu-record-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-block-v1-endpoint-.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-past-logs-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/get-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/invoke-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/run-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/sign-transaction-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/web-services/watch-blocks-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/common/create-gateway.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/common/get-transaction-receipt-by-tx-id.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/common/query-system-chain-code.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/deploy-contract/deploy-contract-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/deploy-contract-go-source/deploy-contract-go-source-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/get-block/get-block-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/get-prometheus-exporter-metrics/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/get-transaction-receipt/get-transaction-receipt-by-txid-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/identity-provider.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/vault-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/web-socket-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/peer/i-query-committed-response.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/peer/i-query-installed-response.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/peer/source-lang-to-runtime-lang.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/run-transaction/run-transaction-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/identity-client.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/unit/identity-internal-crypto-utils.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric-socketio/src/test/typescript/integration/fabric-setup-helpers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric-socketio/src/test/typescript/integration/fabric-socketio-connector.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/api-client/corda-api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/deploy-contract-jars-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/diagnose-node-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/invoke-contract-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/list-flows-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/web-services/network-map-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/deploy-cordapp-jars-to-nodes-v4.7.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/deploy-cordapp-jars-to-nodes-v4.8-express.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/deploy-cordapp-jars-to-nodes-v4.8.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/deploy-cordapp-jars-to-nodes.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/flow-database-access-v4.8.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/jvm-kotlin-spring-server-v4.7.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/jvm-kotlin-spring-server-v4.8.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/jvm-kotlin-spring-server.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/monitor-transactions-v4.8.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/web-services/generate-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/web-services/run-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/integration/generate-and-send-signed-transaction.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/integration/iroha-iroha-transfer-example.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/integration/run-transaction-endpoint-v1.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/unit/iroha-test-ledger-parameters.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/unit/postgres-test-container-parameters.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/api-client/quorum-api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/prometheus-exporter/data.fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/deploy-contract-solidity-bytecode-endpoint-json-object.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/deploy-contract-solidity-bytecode-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/invoke-contract-endpoint-json-object.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/invoke-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/invoke-raw-web3eth-contract-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/invoke-raw-web3eth-method-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/run-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/web-services/watch-blocks-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/prometheus-exporter/data-fetcher.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/prometheus-exporter/metrics.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/prometheus-exporter/prometheus-exporter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/prometheus-exporter/response.type.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/deploy-contract-solidity-bytecode-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/deploy-contract-solidity-bytecode-json-object-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/get-prometheus-exporter-metrics-endpoint-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/invoke-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/invoke-contract-json-object-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/web-services/run-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/deploy-contract-from-json-xdai-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/deploy-contract-from-json-xdai.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/invoke-contract-xdai-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/invoke-contract-xdai.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/plugin-factory-odap-gateway.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/plugin-odap-gateway.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/backup-gateway-after-client-crash.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/client-crash-after-delete-asset.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/client-crash-after-lock-asset.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/client-crash-after-transfer-initiation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/odap-api-call-with-ledger-connector.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/odap-api-call.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/odap-rollback.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/odap.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/server-crash-after-create-asset.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/integration/server-crash-after-transfer-initiation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/test/typescript/integration/api-client-routing-node-to-node.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-api-client/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/integration/plugin-import-with-npm-install-version-selection.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/integration/plugin-import-with-npm-install.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/integration/remote-plugin-imports.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/integration/runtime-plugin-imports.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-cmd-api-server/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/data-test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/unit/model-type-guards.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/besu/besu-mp-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/besu/besu-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/cactus-keychain-vault-server/cactus-keychain-vault-server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/base64-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/containers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/env-map-to-docker.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/env-node-to-docker.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/env-node-to-map.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/i-docker-pull-progress.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/common/streams.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/corda/corda-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/corda/cordapp-jar-file.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/corda/sample-cordapp-enum.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/corda-connector/corda-connector-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/fabric/fabric-test-ledger-v1.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/fabric/interfaces-docker-compose-files.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/github-actions/is-running-in-github-action.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/github-actions/prune-docker-all-if-github-action.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/go-ipfs/go-ipfs-test-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/http-echo/http-echo-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/iroha/iroha-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/keycloak/keycloak-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/localstack/localstack-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/openethereum/openethereum-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/pki/self-signed-pki-generator.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/postgres/postgres-test-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/quorum/i-quorum-genesis-options.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/quorum/quorum-mp-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/quorum/quorum-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/rustc-container/rustc-build-cmd.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/rustc-container/rustc-container.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/socketio-test-setup-helpers/socketio-test-setup-helpers.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/substrate-test-ledger/substrate-test-ledger.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/vault-test-server/vault-test-server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/main/typescript/ws-test-server/ws-test-server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-verifier-client/src/test/typescript/unit/get-validator-api-client.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-verifier-client/src/test/typescript/unit/verifier-factory.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-verifier-client/src/test/typescript/unit/verifier.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/test/typescript/integration/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/test/typescript/unit/api-surface.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/integration/plugin-htlc-coordinator/counterparty-htlc-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/integration/plugin-htlc-coordinator/own-htlc-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/integration/plugin-htlc-coordinator/refund.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/test/typescript/integration/plugin-htlc-coordinator/withdraw-counterparty-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/lib/emissions-calc.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/lib/emissions.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/lib/emissionsRecordContract.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/lib/utilityEmissionsFactor.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/lib/utilityLookupItem.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/util/const.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/util/state.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/util/util.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-backend/src/utility-emissions-channel/typescript/src/util/worldstate.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/model/converter/checkpoint-converter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/insert-bamboo-harvest-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/insert-bookshelf-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/insert-shipment-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/list-bamboo-harvest-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/list-bookshelf-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/list-shipment-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/model/converter/bamboo-harvest-converter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/model/converter/bookshelf-converter.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/web-services/grpc/grpc-server-api-server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/fixtures/plugin-ledger-connector-stub/plugin-factory-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/fixtures/plugin-ledger-connector-stub/plugin-ledger-connector-stub.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/config/api-server-config.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/config/config-service-example-config-validity.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/plugins/install-basic-plugin-consortium-manual.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/plugins/install-basic-plugin-keychain-memory.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/plugins/install-basic-plugin-ledger-connector-fabric-0-7-0.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/plugins/install-basic-plugin-ledger-connector-quorum-0-7-0.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/logging/logger.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/objects/get-all-field-names.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/objects/get-all-method-names.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/strings/drop-non-printable.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/strings/is-string.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-common/src/test/typescript/unit/strings/replace-all.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/consortium/i-plugin-consortium.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/keychain/i-plugin-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/keychain/is-i-plugin-keychain.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/ledger-connector/i-plugin-ledger-connector.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/ledger-connector/i-socket-api-client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/object-store/i-plugin-object-store.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/object-store/is-i-plugin-object-store.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/web-service/i-endpoint-authz-options.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/web-service/i-express-request-handler.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/web-service/i-plugin-web-service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/plugin/web-service/i-web-service-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/test/typescript/unit/consortium/get-node-jws-endpoint-v1.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/wasm-pack/cactus_plugin_keychain_memory_wasm.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/wasm-pack/cactus_plugin_keychain_memory_wasm_bg.wasm.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/besu-get-transaction.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/lock-contract.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/v21-besu-get-transaction.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/internal/cert-datastore.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/internal/client.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/internal/crypto-suite.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/internal/crypto-util.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/identity/internal/key.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v1-4-x/deploy-cc-from-golang-source.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v1-4-x/run-transaction-endpoint-v1.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/add-orgs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/deploy-cc-from-golang-source-private-data.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/deploy-cc-from-golang-source.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/deploy-cc-from-javascript-source.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/deploy-cc-from-typescript-source.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/deploy-lock-asset.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/get-block.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/obtain-profiles.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/run-transaction-endpoint-v1.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/run-transaction-with-identities.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/fabric-v2-2-x/run-transaction-with-ws-ids.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/openapi/openapi-validation-go.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/openapi/openapi-validation-no-keychain.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/test/typescript/integration/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/commit-final.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/commit-preparation.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/lock-evidence.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/transfer-commence.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/transfer-complete.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/client/transfer-initialization.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/recover-success.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/recover-update-ack.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/recover-update.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/recover.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/rollback-ack.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/recovery/rollback.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/commit-final.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/commit-preparation.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/lock-evidence.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/transfer-commence.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/transfer-complete.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/gateway/server/transfer-initialization.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/client-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/commit-final-response-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/commite-prepare-response-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/lock-evidence-response-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/transfer-commence-response-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/client-side/transfer-initiation-response-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/recover-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/recover-success-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/recover-update-ack-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/recover-update-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/rollback-ack-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/recovery/rollback-message-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/commit-final-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/commite-prepare-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/lock-evidence-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/transfer-commence-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/transfer-complete-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/web-services/server-side/transfer-initiation-request-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/client/commit-final.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/client/commit-preparation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/client/lock-evidence.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/client/transfer-commence.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/client/transfer-initialization.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/recovery/logging.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/recovery/recover-success.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/recovery/recover-update-ack.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/recovery/recover-update.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/recovery/recover.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/commit-final.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/commit-preparation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/lock-evidence.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/transfer-commence.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/transfer-complete.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/unit/server/transfer-initialization.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/test/typescript/integration/plugin-consortium-manual/get-consortium-jws-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/get-single-status-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/get-single-status-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/get-status-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/get-status-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/initialize-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/initialize-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/new-contract-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/new-contract-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/refund-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/refund-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/withdraw-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/withdraw-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/get-single-status-endpoint-invalid.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/get-single-status-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/get-status-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/initialize-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/new-contract-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/refund-endpoint-invalid-time.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/refund-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/withdraw-endpoint-invalid-id.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/withdraw-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/get-balance-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/get-block-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/get-past-logs-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/get-transaction-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/sign-transaction-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/v21-get-balance-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/v21-get-block-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/v21-get-past-logs-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/v21-get-transaction-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-validator-besu/v21-sign-transaction-endpoint.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/common/containers.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/rustc-container/rustc-container-target-bundler.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/rustc-container/rustc-container-target-nodejs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/substrate/substrate-test-ledger-constructor.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/substrate/substrate-test-ledger-multiple-concurrent.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/unit/common/env-to-docker-conversions.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-htlc-coordinator-besu/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/fixtures/mock/ipfs/ipfs-files-api-mock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `extensions/cactus-plugin-object-store-ipfs/src/test/typescript/fixtures/mock/ipfs/ipfs-http-client-mock.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/dao-token/get-allowance-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/business-logic-plugin/web-services/utility-emissions-channel/enroll-admin-v1-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-carbon-accounting-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `examples/cactus-example-supply-chain-business-logic-plugin/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/fixtures/plugin-ledger-connector-stub/web-services/deploy-contract-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/fixtures/plugin-ledger-connector-stub/web-services/run-transaction-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/fixtures/plugin-ledger-connector-stub/web-services/unprotected-action-endpoint.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/config/self-signed-certificate-generator/certificates-work-for-mutual-tls.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/test/typescript/unit/config/self-signed-certificate-generator/generates-working-certificates.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-consortium-manual/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-htlc-eth-besu-erc20/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-aws-sm/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-azure-kv/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-google-sm/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-memory-wasm/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-keychain-vault/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/besu-test-ledger-parameters.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/deploy-contract-from-json.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/get-balance.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/get-block.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/get-past-logs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/get-record-locator.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/invoke-contract.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/private-deploy-contract-from-json-cactus.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/private-deploy-contract-from-json-web3-eea.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-deploy-contract-from-json.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-get-balance.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-get-block.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-get-past-logs.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-get-record-locator.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/deploy-contract/v21-invoke-contract.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-besu/src/test/typescript/integration/plugin-ledger-connector-besu/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/hello-world-contract-fabric-v14/hello-world-contract-go-source.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-corda/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-iroha/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-xdai/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/generated/openapi/typescript-axios/api.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/generated/openapi/typescript-axios/base.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/generated/openapi/typescript-axios/common.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/generated/openapi/typescript-axios/configuration.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/main/typescript/generated/openapi/typescript-axios/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-consortium-manual/src/test/typescript/integration/plugin-consortium-manual/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu/src/test/typescript/integration/plugin-htlc-eth-besu/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-deploy-contract-from-json-json-object-endpoints.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-deploy-contract-from-json-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-deploy-contract-from-json.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-invoke-contract-json-object-endpoints.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-invoke-contract-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v2.3.0-invoke-contract.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-deploy-contract-from-json-json-object-endpoints.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-deploy-contract-from-json-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-deploy-contract-from-json.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-invoke-contract-json-object-endpoints.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-invoke-contract-json-object.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/v21.4.1-invoke-contract.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-htlc-eth-besu-erc20/src/test/typescript/integration/plugin-htlc-eth-besu-erc20/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/besu/besu-test-ledger/constructor-validates-options.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/corda/corda-test-ledger/corda-test-ledger-constructor.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/fabric/fabric-test-ledger-v1/constructor-validates-options.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/iroha/iroha-test-ledger/constructor-validates-options.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/postgres/postgres-test-container/constructor-validates-options.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-tooling/src/test/typescript/integration/quorum/quorum-test-ledger/constructor-validates-options.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-test-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/deploy-contract-via-web-service.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/proto/protoc-gen-ts/models/health_check_response_pb.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/proto/protoc-gen-ts/models/memory_usage_pb.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/proto/protoc-gen-ts/services/default_service.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/fabric-contracts/lock-asset/chaincode-typescript/src/asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/fabric-contracts/lock-asset/chaincode-typescript/src/assetTransfer.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-odap-hermes/src/test/typescript/fabric-contracts/lock-asset/chaincode-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/openapi/openapi-validation-no-keychain.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-quorum/src/test/typescript/integration/plugin-ledger-connector-quorum/deploy-contract/openapi/openapi-validation.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-cmd-api-server/src/main/typescript/generated/proto/protoc-gen-ts/google/protobuf/empty.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/basic-asset-transfer/chaincode-typescript/src/asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/basic-asset-transfer/chaincode-typescript/src/assetTransfer.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/basic-asset-transfer/chaincode-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/lock-asset/chaincode-typescript/src/asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/lock-asset/chaincode-typescript/src/assetTransfer.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/lock-asset/chaincode-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/access_control.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/ack.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/asset_locks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/asset_transfer.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/interop_payload.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/membership.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/proofs.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/query.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/state.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/common/verification_policy.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/corda/view_data.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/driver/driver.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/networks/networks.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-core-api/src/main/typescript/generated/proto/protoc-gen-ts/weaver/common/protos/relay/datatransfer.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/asset-transfer-private-data/chaincode-go/main.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/basic-asset-transfer/chaincode-go/assetTransfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/cactus-plugin-ledger-connector-fabric/src/test/typescript/fixtures/go/basic-asset-transfer/chaincode-go/chaincode/smartcontract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Did not find a file matching the specified patterns. (`go.mod`).
+
+### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
+
+Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
+
+- `setup.py`
+- `requirements.txt`
 
 </details>
 
@@ -84,6 +1057,10 @@ Contains Apache License.*Version 2.0 (`LICENSE`).
 ### ✅ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
 Contains https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
+
+### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
+
+Contains https://wiki.hyperledger.org/display/.*(SEC|HYP)/Defect[.+]Response (`SECURITY.md`).
 
 ### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
@@ -101,13 +1078,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`.github/workflows/ci.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -139,10 +1116,6 @@ This rule was ignored for the following reason: ignored due to unsatisfied condi
 ### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
 
 This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=java"
-
-### `package-metadata-exists` <a href="#user-content-package-metadata-exists" id="package-metadata-exists">#</a>
-
-This rule was ignored for the following reason: ignored due to unsatisfied condition(s): "language=python"
 
 </details>
 

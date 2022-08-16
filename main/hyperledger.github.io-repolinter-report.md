@@ -5,7 +5,7 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 7 | 3 | 5 | 4 | 19 |
+| 0 | 5 | 4 | 6 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
@@ -13,15 +13,15 @@ This Repolinter run generated the following results:
   - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
@@ -56,28 +56,15 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -88,11 +75,15 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!**/node_modules/**`
+- `**/*.ts`
 - `**/*.go`
+- `**/*.java`
+- `!**/node_modules/**`
 - `!**/vendor/**`
 - `!**/*.pb.go`
 - `!**/*.gen.go`
+- `!**/mocks/*.go`
+- `!**/third_party/**`
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
@@ -116,6 +107,10 @@ Contains Apache License.*Version 2.0 (`LICENSE`).
 ### ✅ `readme-file-exists` <a href="#user-content--readme-file-exists" id="-readme-file-exists">#</a>
 
 Found file (`README.md`).
+
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/publish.yml`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 

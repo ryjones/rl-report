@@ -5,20 +5,19 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 4 | 7 | 3 | 19 |
+| 0 | 3 | 4 | 9 | 3 | 19 |
 
 - [Fail](#user-content-fail)
-  - [❌ `apache-license-file`](#user-content--apache-license-file)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
-  - [⚠️ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
 - [Passed](#user-content-passed)
+  - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `security-file-matches`](#user-content--security-file-matches)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
@@ -26,6 +25,7 @@ This Repolinter run generated the following results:
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
+  - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
@@ -33,13 +33,9 @@ This Repolinter run generated the following results:
 
 ## Fail <a href="#user-content-fail" id="fail">#</a>
 
-### ❌ `apache-license-file` <a href="#user-content--apache-license-file" id="-apache-license-file">#</a>
-
-Did not find file matching the specified patterns. (`LICENSE*`).
-
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
+Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ❌ `readme-references-license` <a href="#user-content--readme-references-license" id="-readme-references-license">#</a>
 
@@ -49,15 +45,15 @@ Doesn't contain license (`README.md`).
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -69,10 +65,6 @@ Below is a list of files or patterns that failed:
 
 - `gen.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `mocks/mock_messaging/connection.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-
-### ⚠️ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
-
-Licensee did not identify a license for project.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -87,6 +79,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 <details>
 <summary>Click to see rules</summary>
+
+### ✅ `apache-license-file` <a href="#user-content--apache-license-file" id="-apache-license-file">#</a>
+
+Contains Apache License.*Version 2.0 (`LICENSE`).
 
 ### ✅ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
@@ -115,6 +111,10 @@ Excluded file type doesn't exist. (`**/*.exe,**/*.dll,!**/node_modules/**`).
 ### ✅ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
 Found file (`go.mod`).
+
+### ✅ `license-detectable-by-licensee` <a href="#user-content--license-detectable-by-licensee" id="-license-detectable-by-licensee">#</a>
+
+Licensee identified the license for project: Apache-2.0.
 
 </details>
 

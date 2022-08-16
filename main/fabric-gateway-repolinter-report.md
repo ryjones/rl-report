@@ -5,14 +5,14 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 4 | 9 | 2 | 19 |
+| 0 | 3 | 5 | 9 | 2 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `readme-references-license`](#user-content--readme-references-license)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -45,15 +45,15 @@ Did not find file matching the specified patterns. (`SECURITY.md`).
 
 Doesn't contain license (`README.md`).
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -64,8 +64,15 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Below is a list of files or patterns that failed:
 
 - `node/jest.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `scenario/fixtures/chaincode/node/errors/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `scenario/fixtures/chaincode/node/errors/lib/errors-contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `scenario/node/src/fabricski.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `pkg/identity/pem.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `scenario/fixtures/chaincode/golang/echo/echo.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `scenario/go/godogs_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `java/src/test/java/scenario/CheckpointEventListener.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `java/src/test/java/org/hyperledger/fabric/client/CommonCheckpointerTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `java/src/test/java/org/hyperledger/fabric/client/FileCheckpointerTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `java/src/test/java/org/hyperledger/fabric/client/InMemoryCheckpointerTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 

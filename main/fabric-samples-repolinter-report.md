@@ -21,8 +21,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
@@ -43,18 +43,42 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `token-erc-20/chaincode-javascript/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-erc-721/chaincode-javascript/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `asset-transfer-basic/chaincode-javascript/test/assetTransfer.test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-events/chaincode-javascript/test/assetTransferEvents.test.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-ledger-queries/chaincode-javascript/lib/asset_transfer_ledger_chaincode.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `token-erc-20/chaincode-javascript/lib/tokenERC20.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `token-erc-20/chaincode-javascript/test/tokenERC20.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-erc-721/chaincode-javascript/lib/tokenERC721.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-erc-721/chaincode-javascript/test/tokenERC721.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `commercial-paper/organization/magnetocorp/application/cpListener.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `commercial-paper/organization/digibank/contract/lib/queries.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `commercial-paper/organization/magnetocorp/contract/lib/queries.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/jest.config.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `asset-transfer-basic/chaincode-typescript/src/asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-typescript/src/assetTransfer.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/assets.router.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/auth.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/config.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/config.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/errors.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/errors.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/fabric.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/fabric.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/health.router.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/jobs.router.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/jobs.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/jobs.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/logger.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/redis.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/redis.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/server.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/transactions.router.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-sbe/chaincode-typescript/src/asset.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-sbe/chaincode-typescript/src/assetContract.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-sbe/chaincode-typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/typescript/src/enrollAdmin.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/typescript/src/invoke.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/typescript/src/query.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/typescript/src/registerUser.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/rest-api-typescript/src/__tests__/api.test.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/typescript/src/car.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/typescript/src/fabcar.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/typescript/src/index.ts`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-abac/chaincode-go/smartContract.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-basic/chaincode-external/assetTransfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-basic/chaincode-go/assetTransfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -62,27 +86,34 @@ Below is a list of files or patterns that failed:
 - `asset-transfer-private-data/chaincode-go/main.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-secured-agreement/chaincode-go/asset_transfer.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-secured-agreement/chaincode-go/asset_transfer_queries.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `auction/chaincode-go/smartContract.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go/smartContract.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go-auditor/smartContract.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-simple/chaincode-go/smartContract.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-1155/chaincode-go/erc1155.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-erc-20/chaincode-go/token_erc_20.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-go/main.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-utxo/chaincode-go/token_utxo.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `asset-transfer-abac/chaincode-go/smart-contract/abac.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `asset-transfer-basic/chaincode-go/chaincode/smartcontract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `asset-transfer-basic/chaincode-go/chaincode/smartcontract_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `auction/chaincode-go/smart-contract/auction.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `auction/chaincode-go/smart-contract/auctionQueries.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `auction/chaincode-go/smart-contract/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go/smart-contract/auction.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go/smart-contract/auctionQueries.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go/smart-contract/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go-auditor/smart-contract/auction.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go-auditor/smart-contract/auctionQueries.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-dutch/chaincode-go-auditor/smart-contract/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-simple/chaincode-go/smart-contract/auction.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-simple/chaincode-go/smart-contract/auctionQueries.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `auction-simple/chaincode-go/smart-contract/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `chaincode/fabcar/external/fabcar.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `chaincode/fabcar/go/fabcar.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `chaincode/marbles02/go/marbles_chaincode.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-1155/chaincode-go/chaincode/contract.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-erc-20/chaincode-go/chaincode/token_contract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `token-erc-721/chaincode-go/chaincode/erc721-contract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `token-erc-721/chaincode-go/chaincode/erc721-contract_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `token-erc-721/chaincode-go/chaincode/erc721.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `token-utxo/chaincode-go/chaincode/token_contract.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-basic/chaincode-go/chaincode/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-basic/chaincode-go/chaincode/mocks/statequeryiterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-basic/chaincode-go/chaincode/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-private-data/chaincode-go/chaincode/mocks/chaincodestub.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-private-data/chaincode-go/chaincode/mocks/clientIdentity.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-private-data/chaincode-go/chaincode/mocks/statequeryiterator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `asset-transfer-private-data/chaincode-go/chaincode/mocks/transaction.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `commercial-paper/organization/digibank/contract-go/main.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `commercial-paper/organization/magnetocorp/contract-go/main.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `commercial-paper/organization/digibank/contract-go/commercial-paper/paper.go`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -105,6 +136,71 @@ Below is a list of files or patterns that failed:
 - `commercial-paper/organization/magnetocorp/contract-go/commercial-paper/paperlist_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `commercial-paper/organization/magnetocorp/contract-go/ledger-api/state.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `commercial-paper/organization/magnetocorp/contract-go/ledger-api/statelist.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/application-java/src/main/java/application/java/RegisterUser.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-ledger-queries/application-java/src/main/java/application/java/RegisterUser.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/application-java/src/org/digibank/AddToWallet.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/application-java/src/org/digibank/Buy.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/application-java/src/org/digibank/Redeem.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/application-java/src/org/papernet/CommercialPaper.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/application-java/src/org/magnetocorp/AddToWallet.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/application-java/src/org/magnetocorp/Issue.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/application-java/src/org/papernet/CommercialPaper.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/java/src/main/java/org/example/ClientApp.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/java/src/main/java/org/example/EnrollAdmin.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/java/src/main/java/org/example/RegisterUser.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabcar/java/src/test/java/org/example/ClientTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/application-java/src/org/papernet/ledgerapi/State.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/application-java/src/org/papernet/ledgerapi/State.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/CommercialPaper.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/CommercialPaperContext.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/CommercialPaperContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/PaperList.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/CommercialPaper.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/CommercialPaperContext.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/CommercialPaperContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/PaperList.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-java/src/main/java/org/hyperledger/fabric/samples/assettransfer/Asset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-java/src/main/java/org/hyperledger/fabric/samples/assettransfer/AssetTransfer.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-java/src/test/java/org/hyperledger/fabric/samples/assettransfer/AssetTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-basic/chaincode-java/src/test/java/org/hyperledger/fabric/samples/assettransfer/AssetTransferTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-events/chaincode-java/src/main/java/org/hyperledger/fabric/samples/events/Asset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-events/chaincode-java/src/main/java/org/hyperledger/fabric/samples/events/AssetTransfer.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-private-data/chaincode-java/src/main/java/org/hyperledger/fabric/samples/privatedata/Asset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-private-data/chaincode-java/src/main/java/org/hyperledger/fabric/samples/privatedata/AssetPrivateDetails.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `asset-transfer-private-data/chaincode-java/src/main/java/org/hyperledger/fabric/samples/privatedata/AssetTransfer.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-private-data/chaincode-java/src/main/java/org/hyperledger/fabric/samples/privatedata/TransferAgreement.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `asset-transfer-private-data/chaincode-java/src/test/java/org/hyperledger/fabric/samples/privatedata/AssetTransferTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-sbe/chaincode-java/src/main/java/org/hyperledger/fabric/samples/sbe/Asset.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `asset-transfer-sbe/chaincode-java/src/main/java/org/hyperledger/fabric/samples/sbe/AssetContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/ledgerapi/State.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/ledgerapi/StateDeserializer.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/ledgerapi/StateList.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/ledgerapi/State.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/ledgerapi/StateDeserializer.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/ledgerapi/StateList.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/ContractConstants.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/ContractErrors.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/ERC20TokenContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-20/chaincode-java/src/test/java/org/hyperledger/fabric/samples/erc20/TokenERC20ContractTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/ContractConstants.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/ContractErrors.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/ERC721TokenContract.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/test/java/org/hyperledger/fabric/samples/erc721/ERC721TokenContractTest.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `chaincode/fabcar/java/src/main/java/org/hyperledger/fabric/samples/fabcar/Car.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/java/src/main/java/org/hyperledger/fabric/samples/fabcar/CarQueryResult.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/java/src/main/java/org/hyperledger/fabric/samples/fabcar/FabCar.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/java/src/test/java/org/hyperledger/fabric/samples/fabcar/CarQueryResultTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/java/src/test/java/org/hyperledger/fabric/samples/fabcar/CarTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `chaincode/fabcar/java/src/test/java/org/hyperledger/fabric/samples/fabcar/FabCarTest.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `commercial-paper/organization/digibank/contract-java/src/main/java/org/example/ledgerapi/impl/StateListImpl.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `commercial-paper/organization/magnetocorp/contract-java/src/main/java/org/example/ledgerapi/impl/StateListImpl.java`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/model/Approval.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/model/Transfer.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-20/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc20/utils/ContractUtility.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/models/Approval.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/models/NFT.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/models/Transfer.java`: The first 7 lines do not contain the pattern(s): Copyright.
+- `token-erc-721/chaincode-java/src/main/java/org/hyperledger/fabric/samples/erc721/utils/ContractUtility.java`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -157,13 +253,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`ci/azure-pipelines.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

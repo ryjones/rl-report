@@ -18,8 +18,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `license-detectable-by-licensee`](#user-content--license-detectable-by-licensee)
@@ -41,14 +41,55 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 ### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
 
-Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
+Below is a list of files or patterns that failed:
 
-- `**/*.js`
-- `!**/node_modules/**`
-- `**/*.go`
-- `!**/vendor/**`
-- `!**/*.pb.go`
-- `!**/*.gen.go`
+- `integration/burrow/simple.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/balances.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/builtins.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/calls.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/create_contract.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/errors.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/events.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/oznfc.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/setup.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/simple.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/token.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/solana/verify_sig.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/UniswapV2ERC20.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/UniswapV2Factory.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/UniswapV2Pair.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/array_struct_mapping_storage.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/arrays.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/asserts.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/balances.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/builtins.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/builtins2.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/create_contract.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/destruct.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/events.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/external_call.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/flipper.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/issue666.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/msg_sender.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/primitives.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/randomizer.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/store.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `integration/substrate/structs.spec.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/client/extension.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/server/server.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/test/runTest.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/download.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/downloadFile.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/downloadWithRetryDialog.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/executableVersion.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/expandPathResolving.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/fetchLatestRelease.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/getPlatform.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/utils/getServer.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/test/suite/extension.test.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/test/suite/helper.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `vscode/src/test/suite/index.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -85,13 +126,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/build-llvm.yml`).
+
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 
 Found file (`CHANGELOG.md`).
-
-### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Found file (`.github/workflows/release.yml`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

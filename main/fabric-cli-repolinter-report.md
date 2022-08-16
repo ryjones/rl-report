@@ -18,8 +18,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -46,14 +46,6 @@ Below is a list of files or patterns that failed:
 - `cmd/commands/chaincode/package.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `cmd/commands/common/common.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `cmd/commands/common/common_test.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/channel.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/channelcfg.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/event.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/factory.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/ledger.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/msp.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/fabric/mocks/resmgmt.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `pkg/plugin/mocks/handler.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 </details>
 
@@ -90,13 +82,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`ci/azure-pipelines.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

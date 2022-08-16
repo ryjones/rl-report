@@ -5,15 +5,15 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 4 | 7 | 3 | 19 |
+| 0 | 4 | 5 | 7 | 3 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -48,10 +48,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 - `MAINTAINERS.md`
 - `MAINTAINERS.rst`
 
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
-
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
@@ -70,6 +66,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 
 <details>
 <summary>Click to see rules</summary>
+
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
@@ -126,11 +126,11 @@ Below is a list of files or patterns that failed:
 - `support/Lab06/b4s/organization/students-union/utils/showIdentity.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `support/Lab06/b4s/organization/university/b4s_client/app.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/b4s_client/gateway.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `support/Lab06/b4s/organization/university/user-interface/babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/utils/addToWallet.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `support/Lab06/b4s/organization/university/utils/createUniversity.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `support/Lab06/b4s/organization/university/utils/renamePK.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/utils/showIdentity.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `support/Lab06/b4s/organization/university/user-interface/babel.config.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/students-union/b4s_client/routes/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/students-union/b4s_client/routes/logistics.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/b4s_client/routes/index.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
@@ -138,6 +138,10 @@ Below is a list of files or patterns that failed:
 - `support/Lab06/b4s/organization/university/b4s_client/routes/users.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/user-interface/src/main.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
 - `support/Lab06/b4s/organization/university/user-interface/src/router.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/key.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/rsa.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/test/unit/createKeys.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `support/Lab02/test/unit/messageExchange.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 

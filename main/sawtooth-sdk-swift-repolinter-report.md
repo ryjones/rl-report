@@ -5,15 +5,15 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 5 | 3 | 6 | 5 | 19 |
+| 0 | 4 | 4 | 6 | 5 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [❌ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
+  - [⚠️ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [⚠️ `test-directory-exists`](#user-content--test-directory-exists)
@@ -35,7 +35,7 @@ This Repolinter run generated the following results:
 
 ### ❌ `code-of-conduct-file` <a href="#user-content--code-of-conduct-file" id="-code-of-conduct-file">#</a>
 
-Did not find file matching the specified patterns. (`CODE_OF_CONDUCT*`).
+Doesn't contain https://wiki.hyperledger.org/community/hyperledger-project-code-of-conduct (`CODE_OF_CONDUCT.md`).
 
 ### ❌ `security-file-matches` <a href="#user-content--security-file-matches" id="-security-file-matches">#</a>
 
@@ -44,10 +44,6 @@ Did not find file matching the specified patterns. (`SECURITY.md`).
 ### ❌ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
-
-### ❌ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Did not find a file matching the specified patterns. (`CHANGELOG.md`).
 
 ### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
@@ -68,6 +64,10 @@ Did not find a file matching the specified patterns. Below is a list of files or
 <details>
 <summary>Click to see rules</summary>
 
+### ⚠️ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Did not find a file matching the specified patterns. (`CHANGELOG.md`).
+
 ### ⚠️ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Did not find a file matching the specified patterns. (`NOTICE*`).
@@ -77,11 +77,15 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Did not find file matching the specified patterns. Below is a list of files or patterns that failed:
 
 - `**/*.js`
-- `!**/node_modules/**`
+- `**/*.ts`
 - `**/*.go`
+- `**/*.java`
+- `!**/node_modules/**`
 - `!**/vendor/**`
 - `!**/*.pb.go`
 - `!**/*.gen.go`
+- `!**/mocks/*.go`
+- `!**/third_party/**`
 
 ### ⚠️ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

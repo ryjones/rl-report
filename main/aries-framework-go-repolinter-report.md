@@ -19,8 +19,8 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -43,16 +43,7 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 
 Below is a list of files or patterns that failed:
 
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/bls12_381.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/field_element.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/field_element_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/fp.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/fp_test.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/g1.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/hash_to_field_custom.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/isogeny.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/swu.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `pkg/crypto/primitive/bbs12381g2pub/internal/kilic/bls12-381/utils.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `pkg/didcomm/common/service/destination_default.go`: The first 7 lines do not contain the pattern(s): License.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -93,13 +84,13 @@ Found file (`MAINTAINERS.md`).
 
 Found file (`CONTRIBUTING.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`.github/workflows/bbs-interop.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 

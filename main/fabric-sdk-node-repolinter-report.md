@@ -5,10 +5,8 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 1 | 4 | 12 | 2 | 19 |
+| 0 | 0 | 4 | 13 | 2 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
@@ -22,6 +20,7 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -30,22 +29,6 @@ This Repolinter run generated the following results:
 - [Ignored](#user-content-ignored)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -61,6 +44,32 @@ Did not find a file matching the specified patterns. (`NOTICE*`).
 Below is a list of files or patterns that failed:
 
 - `fabric-protos/bundle.js`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `fabric-ca-client/types/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-common/types/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `fabric-protos/types/index.d.ts`: The first 7 lines do not contain the pattern(s): Copyright, License.
+- `test/ts-scenario/steps/base_api.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/channel_operations.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/cli.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/constants.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/debug.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/deprecated.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/docker.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/event-listeners.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lifecycle.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/network-model.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/support/hooks.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/chaincode.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/channel.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/contract.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/deprecatedSDK.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/gateway.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/listeners.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/transactions.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/utility/adminUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/utility/baseUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/utility/clientUtils.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/utility/commandRunner.ts`: The first 7 lines do not contain the pattern(s): Copyright.
+- `test/ts-scenario/steps/lib/utility/stateStore.ts`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -108,6 +117,10 @@ Found file (`MAINTAINERS.rst`).
 ### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Found file (`CONTRIBUTING.md`).
+
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/build.yml`).
 
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 

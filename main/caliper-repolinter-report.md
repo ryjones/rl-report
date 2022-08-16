@@ -5,10 +5,8 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 1 | 3 | 12 | 3 | 19 |
+| 0 | 0 | 3 | 13 | 3 | 19 |
 
-- [Fail](#user-content-fail)
-  - [❌ `integrates-with-ci`](#user-content--integrates-with-ci)
 - [Warning](#user-content-warning)
   - [⚠️ `notice-file-exists`](#user-content--notice-file-exists)
   - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
@@ -21,6 +19,7 @@ This Repolinter run generated the following results:
   - [✅ `readme-references-license`](#user-content--readme-references-license)
   - [✅ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [✅ `contributing-file-exists`](#user-content--contributing-file-exists)
+  - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
   - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
@@ -30,22 +29,6 @@ This Repolinter run generated the following results:
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
   - [`package-metadata-exists`](#user-content-package-metadata-exists)
-
-## Fail <a href="#user-content-fail" id="fail">#</a>
-
-### ❌ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
-
-Did not find a file matching the specified patterns. Below is a list of files or patterns that failed:
-
-- `circle.yml`
-- `.circleci/config.yml`
-- `ci/azure-pipelines.yml`
-- `.ci/azure-pipelines.yml`
-- `Jenkinsfile`
-- `Jenkinsfile.ci`
-- `Jenkinsfile.cd`
-- `.github/workflows/*.yml`
-
 
 ## Warning <a href="#user-content-warning" id="warning">#</a>
 
@@ -75,11 +58,7 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-ethereum/lib/ethereum-connector.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/FabricConnectorContext.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/FabricConnectorFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/configValidator.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/fabricNetwork.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/test/FabricConnectorFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/test/configValidator.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/test/fabricNetwork.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fisco-bcos/lib/channelPromise.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fisco-bcos/lib/common.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fisco-bcos/lib/connectorFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -120,6 +99,10 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-core/lib/manager/caliper-engine.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/caliper-worker.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/worker/worker-message-handler.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/core/connector-base.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/core/transaction-statistics-collector.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/core/transaction-status.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/caliper-worker.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-configuration/ConnectionProfileDefinition.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-configuration/ConnectorConfiguration.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-configuration/ConnectorConfigurationFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -150,6 +133,8 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-publish/lib/verdaccio/stopCommand.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-publish/lib/version/checkCommand.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-publish/lib/version/fixCommand.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-tests-integration/fabric_tests/phase5/queryByChannelNoTargetPeers.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-tests-integration/fabric_tests/phase5/queryNoTargetPeers.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/generator-caliper/generators/app/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/generator-caliper/generators/benchmark/index.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/generator-caliper/test/benchmark/config.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -225,6 +210,7 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-core/test/common/utils/caliper-utils.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/manager/charts/chart-builder.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/manager/monitor/monitor-utilities.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/manager/monitors/monitor-docker.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/manager/monitors/monitor-prometheus.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/manager/orchestrators/worker-orchestrator.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/manager/report/report.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -233,23 +219,25 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-core/test/worker/rate-control/fixedRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/worker/rate-control/linearRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/worker/rate-control/maxRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/rate-control/mockRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/worker/rate-control/noRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/rate-control/recordRate.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/worker/tx-observers/prometheus-push-tx-observer.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/test/worker/tx-observers/prometheus-tx-observer.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/lib/connector-versions/peer-gateway/PeerGateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/lib/connector-versions/peer-gateway/WalletFacade.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/lib/connector-versions/peer-gateway/WalletFacadeFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v1/ClientCreator.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v1/FabricChaincodeOperations.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v1/FabricChannelOperations.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v1/FabricGateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v1/FabricNonGateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v1/WalletFacade.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v1/WalletFacadeFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v1/fabric-gateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v1/fabric.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v2/FabricGateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v2/WalletFacade.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/lib/connector-versions/v2/WalletFacadeFactory.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v2/fabric-gateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-fabric/lib/connector-versions/v2/registrarHelper.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/test/connector-versions/peer-gateway/PeerGateway.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/test/connector-versions/peer-gateway/PeerGatewayStubs.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-fabric/test/connector-versions/peer-gateway/WalletFacade.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/test/connector-versions/v1/ClientCreator.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/test/connector-versions/v1/ClientStubs.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-fabric/test/connector-versions/v1/FabricGateway-1.4.4.js`: The first 7 lines do not contain the pattern(s): Copyright.
@@ -269,13 +257,34 @@ Below is a list of files or patterns that failed:
 - `packages/caliper-core/lib/common/messengers/mqtt/mqtt-messenger.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/common/messengers/process/factory.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-core/lib/common/messengers/process/process-messenger.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/contract-function-parameter.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/contract-function.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/contract.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/declarative-workload-module-base.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/contract-function-parameter.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-tests-integration/fabric_docker_distributed_tests/src/marbles/node/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-tests-integration/fabric_docker_local_tests/src/marbles/node/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-tests-integration/fabric_tests/phase3/src/marbles/node/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-tests-integration/fabric_tests/src/marbles/node/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/formatted-string-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/list-element-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/parameter-reference-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/uniform-random-list-item-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/uniform-random-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/value-provider-factory.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/value-provider-interface.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/lib/worker/workload/declarative/value-providers/variable-reference-value-provider.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/formatted-string-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/list-element-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/parameter-reference-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/uniform-random-list-item-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/uniform-random-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/value-provider-factory.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/value-provider-interface.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-core/test/worker/workload/declarative/value-providers/variable-reference-value-provider.test.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-tests-integration/generator_tests/fabric/src/marbles/node/marbles.js`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-tests-integration/fabric_docker_distributed_tests/src/marbles/go/marbles.go`: The first 7 lines do not contain the pattern(s): Copyright.
 - `packages/caliper-tests-integration/fabric_docker_local_tests/src/marbles/go/marbles.go`: The first 7 lines do not contain the pattern(s): Copyright.
-- `packages/caliper-tests-integration/fabric_tests/phase3/src/marbles/go/marbles.go`: The first 7 lines do not contain the pattern(s): Copyright.
+- `packages/caliper-tests-integration/fabric_tests/src/marbles/go/marbles.go`: The first 7 lines do not contain the pattern(s): Copyright.
 
 ### ⚠️ `package-metadata-exists` <a href="#user-content--package-metadata-exists" id="-package-metadata-exists">#</a>
 
@@ -315,6 +324,10 @@ Found file (`MAINTAINERS.md`).
 ### ✅ `contributing-file-exists` <a href="#user-content--contributing-file-exists" id="-contributing-file-exists">#</a>
 
 Found file (`CONTRIBUTING.md`).
+
+### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
+
+Found file (`.github/workflows/coverage.yml`).
 
 ### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
 

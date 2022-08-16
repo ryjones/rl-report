@@ -5,22 +5,21 @@
 This Repolinter run generated the following results:
 | ❗  Error | ❌  Fail | ⚠️  Warn | ✅  Pass | Ignored | Total |
 |---|---|---|---|---|---|
-| 0 | 4 | 1 | 10 | 4 | 19 |
+| 0 | 4 | 0 | 11 | 4 | 19 |
 
 - [Fail](#user-content-fail)
   - [❌ `code-of-conduct-file`](#user-content--code-of-conduct-file)
   - [❌ `security-file-matches`](#user-content--security-file-matches)
   - [❌ `maintainers-file-exists`](#user-content--maintainers-file-exists)
   - [❌ `contributing-file-exists`](#user-content--contributing-file-exists)
-- [Warning](#user-content-warning)
-  - [⚠️ `source-license-headers-exist`](#user-content--source-license-headers-exist)
 - [Passed](#user-content-passed)
   - [✅ `apache-license-file`](#user-content--apache-license-file)
   - [✅ `readme-file-exists`](#user-content--readme-file-exists)
   - [✅ `readme-references-license`](#user-content--readme-references-license)
-  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `integrates-with-ci`](#user-content--integrates-with-ci)
+  - [✅ `changelog-file-exists`](#user-content--changelog-file-exists)
   - [✅ `notice-file-exists`](#user-content--notice-file-exists)
+  - [✅ `source-license-headers-exist`](#user-content--source-license-headers-exist)
   - [✅ `test-directory-exists`](#user-content--test-directory-exists)
   - [✅ `binaries-not-present`](#user-content--binaries-not-present)
   - [✅ `package-metadata-exists`](#user-content--package-metadata-exists)
@@ -53,30 +52,6 @@ Did not find a file matching the specified patterns. Below is a list of files or
 Did not find a file matching the specified patterns. (`CONTRIBUTING.md`).
 
 
-## Warning <a href="#user-content-warning" id="warning">#</a>
-
-<details>
-<summary>Click to see rules</summary>
-
-### ⚠️ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
-
-Below is a list of files or patterns that failed:
-
-- `backend/ethereum/bindings/adjudicator/Adjudicator.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/adjudicator/AdjudicatorBinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholder/AssetHolder.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholder/AssetHolderBinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholdererc20/AssetHolderERC20.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholdererc20/AssetHolderERC20BinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholdereth/AssetHolderETH.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/assetholdereth/AssetHolderETHBinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/peruntoken/PerunToken.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/peruntoken/PerunTokenBinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/trivialapp/TrivialApp.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-- `backend/ethereum/bindings/trivialapp/TrivialAppBinRuntime.go`: The first 7 lines do not contain the pattern(s): Copyright, License.
-
-</details>
-
 ## Passed <a href="#user-content-passed" id="passed">#</a>
 
 <details>
@@ -94,21 +69,25 @@ Found file (`README.md`).
 
 Contains license (`README.md`).
 
-### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
-
-Found file (`CHANGELOG.md`).
-
 ### ✅ `integrates-with-ci` <a href="#user-content--integrates-with-ci" id="-integrates-with-ci">#</a>
 
 Found file (`.github/workflows/ci.yml`).
+
+### ✅ `changelog-file-exists` <a href="#user-content--changelog-file-exists" id="-changelog-file-exists">#</a>
+
+Found file (`CHANGELOG.md`).
 
 ### ✅ `notice-file-exists` <a href="#user-content--notice-file-exists" id="-notice-file-exists">#</a>
 
 Found file (`NOTICE`).
 
+### ✅ `source-license-headers-exist` <a href="#user-content--source-license-headers-exist" id="-source-license-headers-exist">#</a>
+
+All files passed this test.
+
 ### ✅ `test-directory-exists` <a href="#user-content--test-directory-exists" id="-test-directory-exists">#</a>
 
-Found file (`channel/test`).
+Found file (`client/test`).
 
 ### ✅ `binaries-not-present` <a href="#user-content--binaries-not-present" id="-binaries-not-present">#</a>
 
